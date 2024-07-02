@@ -1,0 +1,1 @@
+sudo docker login -u monthenry -p dckr_pat_Ara2fuzl5Hf8KIV9POV7xwF4LgI docker.io

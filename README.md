@@ -43,7 +43,7 @@ This week was spent following the iExec documentation and attempting to write, c
 During this week, I attempted to model the marketplace as an object-oriented system and ran numerous tasks to see whether slashing everyone could theoretically deter malicious actors. The simulation is not perfect and is still performed in a static system.
 
 ### 2024-07-01: Game Theoretic Model of the System
-After meeting with Matthieu, we decided to focus first on a game-theoretic model of the system. This will be the focus of this week.
+After meeting with Matthieu, we decided to focus first on a game-theoretic model of the system.
 
 ## References
 
