@@ -32,7 +32,7 @@ For the requester, we consider that "utility from the result" is strictly positi
     * P<sub>a</sub> = 0
     * P<sub>c</sub> = -(Cost<sub>c</sub> + Slash<sub>c</sub>)
 
-U<sub>r</sub>: Utility from the result
+U<sub>r</sub>: Utility from the result  
 P<sub>r</sub>: Requester payoff  
 P<sub>a</sub>: Assets provider payoff  
 P<sub>c</sub>: Computing provider payoff  
@@ -57,11 +57,11 @@ We'll write payoffs in the following way: (P<sub>r</sub>, P<sub>a</sub>, P<sub>c
 | **S** | (0, <u>0</u>, <u>-(Cost<sub>c</sub> + Slash<sub>c</sub>)</u>) | (<u>0</u>, <u>0</u>, <u>-(Cost<sub>c</sub> + Slash<sub>c</sub>)</u>) |
 | **F** | (<u>0</u>, <u>0</u>, <u>-(Cost<sub>c</sub> + Slash<sub>c</sub>)</u>) | (<u>0</u>, <u>0</u>, <u>-(Cost<sub>c</sub> + Slash<sub>c</sub>)</u>) |
 
-These matrix shows the payoffs for the Requester and dApp Provider based on their strategies.
+These matrices show the payoffs for the Requester and Assets Provider based on their strategies.  
 
-After working on each matrix independantly, we compare both matrix cell by cell and underline the best payoff for the requester.  
+After working on each matrix independently, we compare both matrices cell by cell and underline the best payoff for the requester.  
 
-From these, we can see that the pure Nash Equilibrium are:  
+From these, we can see that the pure Nash Equilibria are:  
 (S, S, S)  
 (S, F, F)  
 (F, S, F)  
@@ -70,13 +70,14 @@ From these, we can see that the pure Nash Equilibrium are:
 
 ## Repeated games
 
- In a single-play game, actors may have an incentive to act selfishly (defect). However, usually, in repeated games, the potential for future interactions creates an incentive to cooperate. Actors might choose cooperative strategies to ensure long-term benefits over short-term gains.  
+In a single-play game, actors may have an incentive to act selfishly (defect). However, in repeated games, the potential for future interactions typically creates an incentive to cooperate. Actors might choose cooperative strategies to ensure long-term benefits over short-term gains.   
 
- In a repeated game setting, actors can also adopt punishment strategies. If one actor defects, the others can punish the defector in subsequent rounds, discouraging deviation from cooperative behavior.
+In a repeated game setting, actors can also adopt punishment strategies. If one actor defects, the others can punish the defector in subsequent rounds, discouraging deviation from cooperative behavior.
 
-Regarding the choice of cooperative strategies in the long run, actors may lack real incentives to adopt more cooperative behavior outside of the payment for a successful task. The issue here is that causing a task to fail is virtually costless compared to the effort required to provide real value. Therefore, for malicious actors, the endgame is not to provide value, and their strategy is unlikely to shift towards cooperation.
+Regarding the choice of cooperative strategies in the long run, actors may lack real incentives to adopt more cooperative behavior outside of the payment for a successful task. The issue here is that causing a task to fail is virtually costless compared to the effort required to provide real value. Therefore, for malicious actors, the endgame is not to provide value, and their strategy is unlikely to shift towards cooperation.  
 
-Regarding the possibility of punishing bad behaviors, in our system, the worst-case scenario for requesters and asset providers is simply not earning anything. They will never be in a situation where they lose anything, unlike the computing providers who lose computing power and can get slashed. This creates a real imbalance between the different actors. Computing providers are unable to effectively punish other actors, except perhaps by ignoring their requests.
+Regarding the possibility of punishing bad behaviors, in our system, the worst-case scenario for requesters and assets providers is simply not earning anything. They will never be in a situation where they lose anything, unlike the computing providers who lose computing power and can get slashed. This creates a real imbalance between the different actors. Computing providers are unable to effectively punish other actors, except perhaps by ignoring their requests.
+
 
 ## Conclusion
 
