@@ -1,4 +1,4 @@
-# Naive Game-Theoretic Model for the current system
+# Naive Game-Theoric Model for the current system
 
 ## Actors
 For our first model, we'll try to abstract the problem a bit. In theory, the Computing Provider is not one actor but several different actors (such as worker, scheduler...) working together.  
