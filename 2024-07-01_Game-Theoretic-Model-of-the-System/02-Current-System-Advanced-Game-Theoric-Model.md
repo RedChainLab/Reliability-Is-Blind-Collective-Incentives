@@ -16,7 +16,7 @@ In this model, we'll try to introduce 1 new strategie which will be complementar
   * P<sub>a</sub> = |min(P<sub>r</sub>, P<sub>c</sub>)|
   * P<sub>c</sub> = |min(P<sub>r</sub>, P<sub>a</sub>)| - (Cost<sub>c</sub> + Slash<sub>c</sub>)
 
-U<sub>r</sub>: Utility from the result
+U<sub>r</sub>: Utility from the result  
 P<sub>r</sub>: Requester payoff  
 P<sub>a</sub>: Assets provider payoff  
 P<sub>c</sub>: Computing provider payoff  

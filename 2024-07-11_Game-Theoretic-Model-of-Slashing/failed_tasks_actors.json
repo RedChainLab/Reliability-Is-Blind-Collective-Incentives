@@ -1,0 +1,2308 @@
+{
+    "data": {
+      "tasks": [
+        {
+          "id": "0x003df8bdbdc5d7ec25a0d177ca265f32aacaf39857af0461aea78799c6b19bc7",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xaa9a04dec26b77eeb0c598bcacae4eee389a202e0bae66d075e8d8a6b107f143",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x00531db5f59277b0a0c2d3fc9845a47c16f72fbfc1e8ae2c5d836e02dad16c95",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0x55decaa7d9a2b8af50de465aa206262f07ffd749e40dcaed13e28a8bc15213dc",
+            "workerpoolOwner": {
+              "id": "0x0c3d0b3ddfb6e92df84f2ed8939dab523bc644d4"
+            },
+            "app": {
+              "id": "0xee8319073254410d6563892856711d0ee2a6f801"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x005707927ab315b5b43b4e47377854f2a65a62c72214926d63161f541de6d9b1",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x4065d1d2f5c5298205a0b9444e462971820c47fcd04da164b070b2903241b509",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0xdbaec652c0919a35bba0475ac2e02215ad7e8ef6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x01026b7c69a0fff8485ad7661077ebad63571bee875b38696864e4b514b86d59",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x5eef7dea25a296f63a1fdfc948c1f8fceeab445c5dfe6102440aca198e78605f",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x0a3027c6a7a364a799b77369337cf1faf4740588"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x01098b1b4075cf154731cdf05c9ef25124ef47557636df55f7c1cd02b86ebb06",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x3f2055a9b7d430a10069758e71ebbeb1f918c77c"
+          },
+          "deal": {
+            "id": "0x93185aca8f87390984b2393cca5811ace309e3ba6bb3a2b8711e76f1a5074829",
+            "workerpoolOwner": {
+              "id": "0x0c3d0b3ddfb6e92df84f2ed8939dab523bc644d4"
+            },
+            "app": {
+              "id": "0x47d6a91e62966b8cf8e20c0f01feecbb11c24ddc"
+            },
+            "appOwner": {
+              "id": "0x3f2055a9b7d430a10069758e71ebbeb1f918c77c"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x010e27da0c72ba1d3694c920b99b9935759af62ab8754462fd7d3f86b4e1334d",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xb0d1fa0c9113f2ce4b8e5a6838cd35e970444b037cae91c0089e49e57fe8b264",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xf4f8699e1cac992c867fed192ebd4c82599cdfc8"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x017496ac74456aff8c33798f214b0d7cb2d2186872dbee657fe86703275b2492",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x617ac29fad5ed855a461195c7f8e01437ec6bbf6a735cba864fe95a152277603",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x017b4a8caffbcf877e48c387b1f59a81b132dbcbaedea4a8ae222d1cf6f80ded",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xe9c61cd3d960471b7d32bcc6645deb99905dd80f03a953a089693f4f664631e6",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x01dcc00889b2d51ca576d855d91afb559e936ffdd1914da45695e5f66ba49822",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xc48e48538fa49b4e1841e6a29dd47739406ffca58abad47a1d10b6f35d30b69f",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x01f14ec377a5b9e19d2068b691b78df28b5c190cbd17ef18f55a36434d55042e",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xf02f7027e4e8f4e0b2e4d85728dccfb4f5c880b44790c45559bfe70dd8e50ede",
+            "workerpoolOwner": {
+              "id": "0x0b83bd825ebf2650c9c25abba4464e4307333cbd"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0213a77a8a8a299a42ac3017591c04ea5615d0361ebdcacba0bd1d3baf9d0dc1",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x94b6ee00f65d0c3b59448186d30d135d42851329223120bf2fd8d843b7ba22a6",
+            "workerpoolOwner": {
+              "id": "0x0eab3a51e1f00a8a4b275fbe2e6ea9f6eca40e11"
+            },
+            "app": {
+              "id": "0x5644cc8118cfa8a85ce74765a5fab3c5f5a9059b"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x02213d8166baf85fe506536b88eee910e1e0c570b74ff6fade2227dd7439f191",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x84957ebc5554f48b8d5f885d86ca030823014acbafa29ebcb8e41c7b9caec39f",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x02710e8507febb997fc7701f0c579ddcc62bc113efb06a3470df6640a1e00009",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x5a798cb4c5ae39d6b2c9881750841ac6f0a7f4116f80b40bc4269df477c35580",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x028d8724115aa4ea8be71c72b548fdbd04f16cb934f72be1dd17122ed8fed12a",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x348b00785aaacfe29dd030c9c990bd9f62bdd1937bd4cc43f9a3475523b99f8d",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x0a3027c6a7a364a799b77369337cf1faf4740588"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x02a8bd6a441a0a0e44fad12d60387f82d139b5508cbbea48ca43358286e20ca7",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x20e60809ffe0da8d94f7a7f11053a502a8091b24e2e62a1f61dddf5d01bb4a70",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x02d343d87c49eab28d227e1c24647d93bd7d202c2b3321f57531bdc4b8559406",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x0791293e2900df2fff09b1e08827dab0b94dd70984afda92345b400bbca93f7f",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0xdbaec652c0919a35bba0475ac2e02215ad7e8ef6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x030ab7809dfdf5678a7327739993452afda36ca32fa52dd5ed0eef7c7367e5c0",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xa0c90b077f79198648127cecd414397d6dc81295006d59cfd1b71770dd2b0075",
+            "workerpoolOwner": {
+              "id": "0x0a11b386cbc0143d7d1fa7cb62e06d1fab51372e"
+            },
+            "app": {
+              "id": "0x8ab617273fd592bdece8cedc156a0be913336d0f"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x031d5df607f7509bc857500696fd45be4b229750a32161ea8fb8ffff3d147c3d",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xad6f17776e7a101959e81ea2ac855b927ced36c17128613516d9895ad227df71",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x033b9b59fa953c7e98db4ca0252ad47f9040b5572a6fd108181e874f6312e60b",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xe0d5f4da2f6eb34199a0e03da9aa7fa22140c9b4b081eadabe4d54ce58e67043",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x037f5a1f8fb1728edbdf76fa82829eb2cc4ee074bdc008a3db1df0f1f2b75d1b",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xac0611eb89ce4c1ec82343c5fd30b118547ca32149f00be1f230684f5797ef29",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0388e194eea0263385d66a75895a5c75954cdffe53b6503035462772b2df8917",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xccb23fabc0f2a723e535b3dc7b351078de957159f79a82a0b35b878ba0cfd436",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0396832b726f22b69b96c5c514394cd9e3598493a3b5cc75e3273814865c598d",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x2ed34098df9828a05ab1409a993e3e5fc0b111358b84df9045e8fb8688b53051",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x03a48c068b039b8faac82c0725994660c654a2d3892ce385707940bfe71c40c8",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xd939c919557665bcd2ae7a3ed3a1ae93e0190680d9d99937351ec93169dcfb77",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x03a5631a9aad8d774413907e321d4517bce21a7d12d9e17a7d724556f277407d",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x723c56e2e33b6c112293d7df35bd0e0c936a1a850b6930699d5d488c132d8e81",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x95a71e541139d380d409e578e2c808a2848a9be1"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x03b5a83ae9f42bbf28aa63441167e4ca76851d663c8700533c69eca8022b4448",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x852917abc61736240f5c20ba4251545bc9728e1fc2bf1ab7b10567d671c7367e",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x03cfefe3a3d0097b3b59807e92e31929f11d1586725959138acb722bb7368f1f",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x7b1327ad1f307d1d2d88de88d474413a6e3b154f8f933f1e20d87b3fad602674",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0412dae5c5d505bc272e3f2e8df3577ba6cf757468901e06414ed67c76417ce5",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x7dbeb338dffbd32673aafe049399de18bcb31a767623cc2c4f2a62290844514f",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x041c3bc4fe6ab6b034a80802e663852131d70351db47148243e5bf29b6badc22",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x0d252e03ecb3bf34a5eba25420d5dfe58df8328d7b26486a45b1f6480440d454",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x041d0014b2e2d82d1f69b792c827c3f268b1d09ad0bf13769c2e06d08c9d18b5",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xaccfae887f936d7e64d47b9254ed5e7bf6a682f958f6a03832795d45b0b38dcb",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0428cd5f34fb0557856931f7e186c3c5acfdd4a838a5891b115a86e432de7d08",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x959a7006dac92524032c74665de1aa2a8e778d7589985ba32cff59305ca97c16",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04318e4c8820e3e97131c132830ed21817ad9aa882f5d16ffad9debe7c6aefe8",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x922338132ae60eb3ce3088d3596da3429e268cb3f0d17dd9f15868e625c98ce7",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0446f452adee9b6a5987a7ff6f5c9718ce425b7fced86fd8ce85c29c805c0fe5",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x0e11cbdb52aede21eaef5d9cfb1969821e81de0211dd7f8f0846b5a728a0fd62",
+            "workerpoolOwner": {
+              "id": "0x0a2af09fcfa22282ebcfc18079bb9bc9ff996914"
+            },
+            "app": {
+              "id": "0x8ab617273fd592bdece8cedc156a0be913336d0f"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x046b839cb226b4df7f02e1372a59401ef1bef88f66d79b368ce0b40f5264534f",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x734a55ddb4581c5fe504b09274eb8cc5c061c0078417a14d27ff68348f602545",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0498c5c565a463559f492253dbd4d5d01bb35742695caa88cccc96280ae122ca",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xd3d167b8bc2e2b72a1abaeb818ff779c05ab666aab26dece02d314912900be94",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04b9007dd01204990f053fa57b9669aa7ddb925422ff7fa2db119bfa20085de3",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x14fd066e96b79de4ad239779dbba7bc05ea39368ad06e93f1908a550f4506040",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04c6f804296db3bb7f8cb06a509e8ae3ef444ad0624a228dfb16da7f296e364c",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x31ede8f591a59c7a3d5270b9d7df848cc0ea18ed6727f0e0cc8a0f1fb333987b",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04e60e80dd292ddfee3faeeda9d9dfb374dae3715fe9fefadc359375fb29aec1",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x266fd81833fd199e6ba99799ab1bf980f0e17cc539ef7f188c86dac23e3fcdaa",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04ecca28a5a024d663f58d54d53d8fcf870dfaf7e6644b171e912cd01268b8c2",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x6e24c3598011e8c0eeafebd750ba4e2a5c4942616d2dacb93f7c4500f1234cd9",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04fd1027c51d7d6e84caeb9ad620f436c8fbcf52827d88b313cded42405ec6a0",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x7800885445a481315fac90a8e8bdb62a0e538b71"
+          },
+          "deal": {
+            "id": "0xe4ec4f78d9674a3f37533338a2e91b64ed5b48ee72750c71730f6f17f06ef3d9",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcb214944300aafd25655b887e625655fee97d53f"
+            },
+            "appOwner": {
+              "id": "0x7800885445a481315fac90a8e8bdb62a0e538b71"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x04fe23c2fee334205afb07eb91e310aa90470af639b2108508855ec02d736a4f",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xdf0ee49403570178a01ebaf346034df47446a0f6cb83382df73ef27a059f5553",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0545ca2ff42d22ccd191545b2fa8478bea5d595647a2cf087297d91b428ee5ca",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xcdad11de45ff79de0479a32ba0245fd07f605a2233822e0a0ea52217a277bcf5",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x056b75aa81dce3139eba6c1cbb0a216e1b0a9fcb675ca9585394373bf878635e",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0x41a6e21fc853ae3541a4438efa6acedc0003fcdc4405d795d01272ef2eadea40",
+            "workerpoolOwner": {
+              "id": "0x0b83bd825ebf2650c9c25abba4464e4307333cbd"
+            },
+            "app": {
+              "id": "0x0bbb3c49befb3cc129731c1c525981575c1ccb6a"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x05c19218fdb04d675105d24f43d6f63f227ef9c6128b5e7e752af099aaa10179",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x98d72aa6182531d480136cd0c91198ba717ca55336c088aaa7523133991b397d",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x05d13c6f430fefbe672dc9369faa9a1c158ed0addbf1df970c50cea0365810dc",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x3588bd18fecc385763da8bdf1f3e65b669b1bd212bd5a3c1d74ddc7e0480173f",
+            "workerpoolOwner": {
+              "id": "0x0a11b386cbc0143d7d1fa7cb62e06d1fab51372e"
+            },
+            "app": {
+              "id": "0x8ab617273fd592bdece8cedc156a0be913336d0f"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x06473b3ed4197749e44d64599e7294d6bc87df5f4c2433411f621e207d406303",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xa439bbbbaadb4c6aa6feedb7650ab16a853a09e5808eda597fb781158099c922",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x066bbdf80c1527195368a8a3c2c6f615d72322642e950ce5824cf457daf9d89b",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x95fe33162b25c5ab3d4cf70a921077129fc5646c1034b2ef49930a288960d020",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x06796ad3a3ba757e86db219870b68108e00405b74e779b3f0797995f27f536e2",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x99b223b18bbdc08bed7b16a62f7d374bb92c276dc22d3d709e157b0e3b9fcd24",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x95a71e541139d380d409e578e2c808a2848a9be1"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x06a84cbeb037e07586c3716f8b23181f5c7369d8a68f92d9ec558ac8f8df73d8",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+          },
+          "deal": {
+            "id": "0xfbccda76b483592899d53c8f507610d785486ff04fbb64287137068653aba5f5",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xdf7e37aa5ac426de074086a0332f57104d3b547d"
+            },
+            "appOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x06bbd311b452dd0e5b910cf01cfbd5446938ad27fa6d7aec98267083a7a3c3d0",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0xfa8525f08ac90570d298d455fd276b159ec52b960f38141d0b8f847aa8f8defc",
+            "workerpoolOwner": {
+              "id": "0x0c3d0b3ddfb6e92df84f2ed8939dab523bc644d4"
+            },
+            "app": {
+              "id": "0xee8319073254410d6563892856711d0ee2a6f801"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x06c1f003ed878d414f08b4c19357c39df9dae6afbb24fec95d8298a21779afc6",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xbf5bc370e921aabf5490c5788d0d8ac31092a11f2de1d9fe07d614c5d479e0c5",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x070ff9b6539aa04e4df4ef035cd7713e321af2fd7e63b97bd9cff4256ef1d8d9",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xcab8c6f5669f94f7aabcc3caf164865815f217089ac7f24605b75b8e34dcd1e6",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x076287d3160967310e584b4d9a07c40a2b6a355f059d3a0495f281651f45fcc1",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x91ed1582f6d1d9c8bb5a0335c3d1b8500e869f97af58fd755e19fc09abe76764",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0763fd1cbd858a724bcb171d2d4dabac16c270a07ec9e5c9405a91e87c758adc",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x81b58f669588617ad91f0a4b1efe648b079426c303b42ea7606ee53b6a6845b3",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x079928707c6d3947eb20f23ee929c6edcb6abaedac35fe1766b334172695fd63",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xc7efa1bca19ac08987b140e3956b1a3170cd594b926f8a62c86dde2d9efb3594",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0xdbaec652c0919a35bba0475ac2e02215ad7e8ef6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x07b604d7829855bd506ef60178fdba1c1aa87d9c616e5e63b9c9f1f8c24d15fb",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x521bc605ea1ee4074c0c4c99039fc77d04ae8fa543f43d52e38abdfdfd149cc8",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x085b2cd9dbd33893a5a4f155a497cc14e394b9c7a02750e3400e1b94aa7388b0",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xf4833ec7d8f4ed876a32d9a9dcc6ee5c1ef3364bdcf3988aafe72fa215da854d",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x085e9199230e98736a88298fe2a9473a46d2cf068b02945669fa4bd9d46eb992",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x397129732f41ec0668609b9ae556f6b57eef681f1e846626d53b3a945f678b29",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x08d86ab0f72a460626c2f2c8ba184ebd29c2461cf8bf91576a6bc717901e02c7",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xde9d798a07d9aa1c9a3ea2cf7195b08fb48c020c89ac9ce4da414bd7afa1a918",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0xdbaec652c0919a35bba0475ac2e02215ad7e8ef6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x09133da77b52dd0f0ac74b05453530c70078cb4069e1e9abd520f0f53be0d4f9",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x8df3c63a7d335d14cbfabcbc2a6601b399046712840609862f0e00555dacdadd",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0924787f7517960d19c2d3055fe54e1b8772526618630408eb51cda51f97a622",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x6577e60f39dd8a419aa9dad83512fe7ade29f368078b1ef518356c2ac01db431",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x09577ce9fb254f95eb84fb6cf854d5932b270afba5ef5a6e123aae8a12e641e7",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xc3d026ab7f9dc6ca14bda1c4d4c5c3ed293d685dce48ac81009584b6940cac26",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x095f604eb56ecb9c79d95567abcb9b0af522dd46eb8f0572e37151bb687babf4",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xdecc97d6e87fd757acf48de1678fbbe4af1a1062d0c6fe6eec64238b22f32d5c",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0967d2dd08614fdd5cf8c18761f3d7d9817b052d76dc9275b7d86095cf3db50f",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xaa07bca147257ff77249ded12e159d83b81538c6c8eb2d2a401c33ca945665a7",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x098b5ff77065f84384573865cc22b40edf43cad01176b9c37260ef99abe846f1",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x49c5eba51d30f8cac39da50c684a6a708883cbad073787c3a52145dc4e592503",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0xdbaec652c0919a35bba0475ac2e02215ad7e8ef6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x09dd8ae383b45a3fe9381fb76005aff8a29c41964432534f3ee2fab323ba3c77",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xf8f0467e6aef7211fe8f69eda848885e594c8e27012ff2369d072183df3eb020",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x09ddc42d30d4eafe3bf62420cf17b808f74d6ce3297dd998c13e9d6d898773d5",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x402173bcf34ce27d32315481c21603310edb70e90c2dedb1a62a739c80a3fef7",
+            "workerpoolOwner": {
+              "id": "0x0a11b386cbc0143d7d1fa7cb62e06d1fab51372e"
+            },
+            "app": {
+              "id": "0x8ab617273fd592bdece8cedc156a0be913336d0f"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a177f055479151ec8cf7dfdbb3840a42179dd5a986b1309a7cc85a9908fe8fe",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x9acf9e1e9ae931b8362e95ea7ebd1ac9e4c83799844a7d94cd49e32f2ffad731",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x0a3027c6a7a364a799b77369337cf1faf4740588"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a42bc4523afbe4ef0e36f2bb76cbb4c8acafc88aae844544395392febbc412a",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0xc3c551078a713602feab735bb3141f062171cd9c991f31077c856f2fd8761ce5",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x3915e123009973304a8d6a0afbf042eac303644f"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a4921dd12f1912e4e7252e89ee9a821bb6845968bafbb2d22629fb7b3f025f2",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xd3d21d8cd1ba32c3d280d7ede965fe7d9c7d6491820d880804cabfb7049d6431",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a55a3beec1d68c243c867414e69a3e99b1d98e962733b0632ad200395d9f29b",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xbdc2b9e34f700c4e48c1c7ec22efbab19ed454f9d2475b461a416cee40d23f16",
+            "workerpoolOwner": {
+              "id": "0x0a11b386cbc0143d7d1fa7cb62e06d1fab51372e"
+            },
+            "app": {
+              "id": "0x8ab617273fd592bdece8cedc156a0be913336d0f"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a5d058c72454b04558aa283266b6f90515b22ffdf7f75f08352ec6161aa8bc1",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x3df57fc8763a7547b9108ab81ee3a7f9330e653aae18d8feb5d0b06652c00698",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a6401240e50c455cc2fb17396338fcbd65b8c1ec30513f99722092407cd9b53",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0xcc568248614ffc8886b7cfc3a54e99bfa5e45555e31da812f12b581c1566876b",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xb588f490d77407b0696fc7121bc9a4d94e6b8563"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0a6f28954bbd368b378c7dd83e66a3abb22077dd0dcf407a305e0ed448e5aa8d",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x2ac255e2644157217ebc5b99bf866fd5fe7b35ec579d61b3a7cd0fd8c04c965f",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0aa67af3c4ff9280c2c3a8aecd59fb722ac0ce92f3ca8e0274ff75eab3c2d110",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xcd8b67c8a258f70c9a020690eece224338a9963908115fcf214de0f90ab08a2d",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0ab6c983dc5ec77fc1b3c14fee71b9e881f5a25016d88a718c71a2e9ddbea643",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x0fbdfe1eb75b158300f6d5253178e9602d47262b90c3fd0deac0ba4596cf2da5",
+            "workerpoolOwner": {
+              "id": "0x0b83bd825ebf2650c9c25abba4464e4307333cbd"
+            },
+            "app": {
+              "id": "0xc5b3ec47543805c86a3a906fba4e557285431e9b"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0af109943dcaab04da78fca30597aaa4c26473205e554aa70cad653848b6440b",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xd1d7a97695613578ea9242b158888c6fa33de4f10cb78856019464ed9689e61a",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0af638c6206f6a350a186d70fc082ef00ad5c2c74333462206fdf68cc44d6d6d",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x79926aa5f9ab08b9243d9d2227b193730dc3e4715b4114677e97f00d84b681e3",
+            "workerpoolOwner": {
+              "id": "0x0a2af09fcfa22282ebcfc18079bb9bc9ff996914"
+            },
+            "app": {
+              "id": "0x8ab617273fd592bdece8cedc156a0be913336d0f"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0b125bb753a5acd81fcf931a2232d080cd2debf201a35f1a1da13755c0f61944",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x348b57057c1157b9858e15df1b8118c393a7cab470b7bf58f110d081851d0a22",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x0a3027c6a7a364a799b77369337cf1faf4740588"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0b882bbc0179cc840b205a79c60d81953bc2e5b803db681ebd38450731f163f5",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0xd15c645e5b5427d85568c77f8e933fc7fca17a81"
+          },
+          "deal": {
+            "id": "0xf15e12dcdf2edc6f68e835b45b8841fd97fc0bc3f76017d19bb5fcffa75e782d",
+            "workerpoolOwner": {
+              "id": "0x0c2e2f5c360cb58dc9a4813fa29656b56b546bf3"
+            },
+            "app": {
+              "id": "0x207a2dba98da5d133b39b7c5a57fae035c4aaeba"
+            },
+            "appOwner": {
+              "id": "0x0c6c77a11068db9fadfba25182e02863361f58da"
+            },
+            "dataset": {
+              "id": "0xd96003b0649ef87e5e9936694a4547fda6c8bd9f"
+            },
+            "datasetOwner": {
+              "id": "0x5b998576c433314eb1cdc8d13ec4774126edd192"
+            }
+          }
+        },
+        {
+          "id": "0x0be9555cf377bd5e20857dafea2fc76051501199cf2b68266852c57ddba901bb",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x7b4b33eaa4f6ebcd4d0dce630b3634320c0c75f0caea0e222445998b70fc3f65",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0c71c9d838dfd7a856c23dfa7efab83d035c9acf89633441ded68b44f6ff1544",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x5df28c471c959108fc8af2f5d92c51a44de412548d60ede9cc9d8d6c1af57726",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x0a3027c6a7a364a799b77369337cf1faf4740588"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0c97b32efb3bd2085887449b87ff93074f2c7ac622a8afec7832fc1d9d5a4e8a",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xf85f788ef7e1b34a931037e2a2ab2c4770fd0ed8ce5100510468d0d9ff6522b5",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0caa4b01f683931b0cf6f34db9ce156e2bdc18450ed2b4fd875e9a8db33550da",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x271a433179537f16db9a9b3049d859a503002a02d4007346ac42bd7308640a10",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0cc0ac08c8a98107d1b7e8e730535b7f6f6194c72495502598cdf7dfc6438a08",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x046ddec697735ec7d992cbd66780ceb5759e9f8a52d6d626127bcac8ada1c4b5",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0cca4ea802c37de2a700d57343bbb0be6ddceafaa931dcb98135132c4ebd64a0",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x1af423cad59d4523f84f81369e325be34f5ad56a1e30e25b95b664e39b9c068f",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0d3b61af03b4e5e2091b60c3d7437697307aaa2cce55427639e4e3457ad30eef",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x447d34bad81b09dbbbd83ce427e47f48e83a489883ae1df2db3305c293c2cd31",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0d525110d52e8fb2efd042c0eb55f5d231898827f5baad78c0944fd91265898a",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xbd16cf4f2b12a98f17bb0099f1af7d2365f30485f990eb299a2fb9d0252e2dae",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0d92b32e44c4162f8dd2cc459e81c7ddd23d6b223d6ac87a5bced1070a96ab38",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x2efc8c80af706304b264fbb7da1a19171faeaad34bf33ebd885abeef4b174daf",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0e0175b4f7d9911df489d7e20122ccce7e2f54682ecee269ff8ac5b34b96e251",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0x15ec05c972f3f8ecaf926f66ec97c166251a971f0f245b9c90b108f769e3a580",
+            "workerpoolOwner": {
+              "id": "0x0ba9a8d59c64cdd91c2dd0742ba3f92abd793e84"
+            },
+            "app": {
+              "id": "0x2fed16b09863b7498ea9f086137abce68b278106"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0e375053c840496b6dbb971fd40e686eca6f692b03606f752164a722647d0b79",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x9626521254af4f6cf287e4c15fbd6cf654f5b9262856e497429ddfd9cf824aaf",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0e3946ec24e38bf37e415accc4f40844ce6665848c9c3215bb56584045de36f7",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xedc405a10eb4a12548b3cedb957958f5a28469d2d72e3d83a49532fae3f4aace",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0x0dfb8b8390c8fbd5a876398dea1d0d204843112e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0e4c62f6cebdb6d235508521ab34383e5bb000e34c9f7dc8127f51feb332904b",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0xfbcc608bfd6d0d46365e4ca3c4e5f4d7b9e1c766ce070392c093c52e6feadd46",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0e5f39e570710b13dcf85c12672f8504fc582047747a9e62e35ce332791780a5",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xdd9ea892594c8314a940f07ff6844e2d294dd3b3c2e6ab56a3d7c38867d381ac",
+            "workerpoolOwner": {
+              "id": "0x0b9d4e956b0f58b10ee8febf1eca617974a2806e"
+            },
+            "app": {
+              "id": "0x6af9320796a450f88226db760e1525da5235dfe6"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0e954b99b2fd8202c2763d15d50bf3e5fac87d2da37cc5bb4899129b695eeaf3",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x3d809cfae6af0b5c0b0cd7c75f55129c7dd8e6ad1dc14853de7914f05cb0ea91",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0ef91112e71e911990f80f838d418312b9340451464e850c542a6c54a0f4a4fc",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+          },
+          "deal": {
+            "id": "0x7b09b4292b1e5095cfcbd15fee98202d0dca09297bb4197349a5aebc7be1d262",
+            "workerpoolOwner": {
+              "id": "0x0ba9a8d59c64cdd91c2dd0742ba3f92abd793e84"
+            },
+            "app": {
+              "id": "0x81300cfe52e5e826aa35db874838e966c92cc9a3"
+            },
+            "appOwner": {
+              "id": "0x1b0b0038284ceba6807d60277c74ad3e21f27222"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0efd13040b3e630e03ed7f89653c957b4cc2fcb268cd937a106cc3f13809847a",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0x36d0ee14e05d8829ceda2a29150f11cb301c17ebf033fe187ea2aafa32e74d89",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0xcefa22a4acf784e47a4c51ebb4f331415de89744"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0f2749256d98a6e02d9b6b3a33dd8bff8d7c20825826ff8ad1975633662f496f",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x05611eaf8505bdaa991f0c62c231ec44787a643b"
+          },
+          "deal": {
+            "id": "0xe6fdbeca45c421f1cde199dd7667c80cadb11fae02c86d82d0f22ce814deec43",
+            "workerpoolOwner": {
+              "id": "0x0b61e8986f3523c852a93ba8c54b4ae1b9e12394"
+            },
+            "app": {
+              "id": "0xd037626c0f37a05ed8713242a61144f521fc4add"
+            },
+            "appOwner": {
+              "id": "0x1af04204013f3e5f7a0dab40aa1a56f81cf2d674"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0f3e530e15f33a9a40438daf666fe513ae064f6da5abce57aaf9dec95d75ebc8",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xdab84fc79dc09392f07bac54f5c92b500dc2e50c0aae43a151771ae1180efcc9",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0f3f5e729703e8831318b2cacc759146e35c9a846f803628d687398416da0cef",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+          },
+          "deal": {
+            "id": "0xfec4da449278f9f01311209ee883788f97ecd9b02e0764d9b571c9c078bac2d8",
+            "workerpoolOwner": {
+              "id": "0x0b5f65c8facdb064905e5dbdbf0f64193fc5ea69"
+            },
+            "app": {
+              "id": "0x869989098a278634dbd9c1409d1c1389ba58212e"
+            },
+            "appOwner": {
+              "id": "0x0d67ddb3d1ebd256c37fa8b7ca53dd4157f3f0d6"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        },
+        {
+          "id": "0x0fae7ac121a24bd5ee323dadc95d4efe9dcfbdc8f36459a4145058883b90ab53",
+          "status": "FAILLED",
+          "requester": {
+            "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+          },
+          "deal": {
+            "id": "0x7265c6cd0c5d07c0d92f7a831a0964d3ea6cf4e3ab66c39108eb8e21bbfd3175",
+            "workerpoolOwner": {
+              "id": "0xac7fb30f96a2a38941f12927fcefb1edeaa387d3"
+            },
+            "app": {
+              "id": "0xb3c29f3a2e81892337dc542eb716fb834c5e938e"
+            },
+            "appOwner": {
+              "id": "0x63babfddba366c17f7934b064d1da34f5827f58e"
+            },
+            "dataset": null,
+            "datasetOwner": {
+              "id": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        }
+      ]
+    }
+  }
