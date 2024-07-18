@@ -45,6 +45,14 @@ During this week, I attempted to model the marketplace as an object-oriented sys
 ### 2024-07-01: Game Theoretic Model of the System
 After meeting with Matthieu, we decided to focus first on a game-theoretic model of the system.
 
+### 2024-07-15: Game Theoretic Model of Slashing
+Explored further into the game-theoretic implications of slashing mechanisms within the decentralized marketplace, aiming to understand its impact on participant behavior and system resilience.  
+
+Also explored the iExec blockchain (graphQL) to look at possible error analysis thanks to the informations logged on blockchain.  
+
+### 2024-07-17: Ruin Theory
+Investigated the application of ruin theory to assess how fast actors can get ruined within the decentralized computing marketplace using a slashing strategie.
+
 ## References
 
 1. iExec Documentation: [https://protocol.docs.iex.ec/]
