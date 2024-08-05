@@ -1,0 +1,93 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: imports/bibliography.bib
+Warning--I didn't find a database entry for "skim"
+Warning--I didn't find a database entry for "cuthbertsonFacebookUsersReport2021"
+Warning--I didn't find a database entry for "swearingenWhenAmazonWeb2018"
+Warning--I didn't find a database entry for "CensorshipGoogle2024"
+Warning--I didn't find a database entry for "gargSteemitCensoringUsers2019"
+Warning--I didn't find a database entry for "glaserHowAppleAmazon2017"
+Warning--I didn't find a database entry for "doan2022towards"
+Warning--I didn't find a database entry for "liBringingDecentralizedSearch2021"
+Warning--I didn't find a database entry for "keizerDittoDecentralisedSimilarity2023"
+Warning--I didn't find a database entry for "zichichi_towards_2021"
+Warning--I didn't find a database entry for "costan2016intel"
+Warning--I didn't find a database entry for "coolTEEcode"
+Warning--I didn't find a database entry for "wangCircuitORAMTightness2015"
+Warning--I didn't find a database entry for "slivkins2019introduction"
+Warning--I didn't find a database entry for "fiducioso2019safe"
+Warning--I didn't find a database entry for "xu2023config"
+Warning--I didn't find a database entry for "auer2002nonstochastic"
+Warning--I didn't find a database entry for "ziegler1942optimum"
+Warning--I didn't find a database entry for "vargaOverviewOMNeTSimulation2008"
+Warning--I didn't find a database entry for "zhuNetworkLatencyEstimation2017"
+Warning--I didn't find a database entry for "mitzenmacherPowerTwoChoices2001"
+Warning--I didn't find a database entry for "panigrahyAnalysisEvaluationProximitybased2022"
+Warning--I didn't find a database entry for "663936"
+Warning--I didn't find a database entry for "stathakopoulouAddingFairnessOrder2021"
+Warning--I didn't find a database entry for "kelkarThemisFastStrong2023"
+Warning--I didn't find a database entry for "HorizontalPodAutoscaling"
+Warning--I didn't find a database entry for "Graph"
+Warning--I didn't find a database entry for "torresFrontrunnerJonesRaiders2021"
+Warning--I didn't find a database entry for "bentovTesseractRealTimeCryptocurrency2019"
+Warning--I didn't find a database entry for "cachinQuickOrderFairness2022"
+Warning--I didn't find a database entry for "TorProjectPrivacy"
+Warning--I didn't find a database entry for "muhlbergerFoundationalOraclePatterns2020"
+Warning--I didn't find a database entry for "etherscan.ioEthereumAverageBlock"
+Warning--I didn't find a database entry for "caldarelliOverviewBlockchainOracle2022"
+Warning--I didn't find a database entry for "al-breikiTrustworthyBlockchainOracles2020"
+Warning--I didn't find a database entry for "heissOraclesTrustworthyData2019"
+Warning--I didn't find a database entry for "liuGowiththewinnerPerformanceBased2016"
+Warning--I didn't find a database entry for "wendellDONARDecentralizedServer2010"
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 0 entries,
+            5981 wiz_defined-function locations,
+            1538 strings with 19723 characters,
+and the built_in function-call counts, 105 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 14
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 1
+empty$ -- 1
+format.name$ -- 0
+if$ -- 2
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 40
+num.names$ -- 0
+pop$ -- 1
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 39
+(There were 38 warnings)
