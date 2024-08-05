@@ -1,0 +1,102 @@
+\section{Experimental protocol}\label{sec:experimental_protocol}
+
+We present in this section the performance evaluation of \sysname, performed in terms of IFR advantages, as well as overall Quality-of-Service regarding roundtrip search latencies.
+In particular, this section allows answering the following questions: 
+\begin{itemize}
+    \item[\emph{RQ1}:] What is the performance of \sysname\space in the fault free case?
+    \item[\emph{RQ2}:] What is the performance of \sysname\space in an adversarial setting where providers are equally distant in terms of network latency from consumers (e.g., all providers are deployed in the same datacenter)?
+    \item[\emph{RQ3}:] What is the performance of \sysname\space in an adversarial setting where providers are deployed over the internet, i.e., with heterogeneous network distance from consumers?
+\end{itemize}
+We answer these questions in \Cref{ssec:res-FFPL,ssec:res-sameDC,ssec:res-malPL}, respectively.
+\subsection{Metrics}
+
+Two types of metrics are used to assess the performance of \sysname: discovered Never-Before-Seen assets (dNBSa) and latencies.
+The main metric is the number of discovered Never-Before-Seen assets (dNBS-assets) by malicious consumers, as defined in \Cref{sec:problem_statement}.
+
+If the proportion of dNBS-assets discovered by any subpopulation of consumers is similar to the proportion of requests sent by that subpopulation, then the subpopulation has no IFR advantage over other subpopulations.
+If that proportion is higher (resp. lower), then the subpopulation has a higher (resp. lower) IFR advantage (resp. disadvantage) over other subpopulations.
+
+The secondary metric is the latencies experienced during the lifetime of consumer requests and their responses from providers. Indeed, latencies at specific steps of the protocol have an impact on the first metric.
+Notably, the freshness of a response, i.e., the time elapsed between the moment the service of a request starts and the moment the response is received by the enquiring consumer, is the target of \emph{timing attacks}.
+Therefore, we also observe the latencies of search protocol phases and those introduced by attacks, to understand their impact on NBS-asset discovery.
+
+Roundtrip latencies will also be considered from the point-of-view of the Quality-of-Service (QoS) experienced by consumers, with lower latencies using a given mechanism indicating better latency-QoS.
+
+\subsection{Deployment and simulation setups}
+
+We implement the \sysname protocol in C++, using DeSearch~\cite{liBringingDecentralizedSearch2021} as the back-end search mechanism. 
+Search providers run on an SGX-enabled 4-core Azure \emph{DC4s\_v2} VM, while consumers run on a non-SGX 16-core Azure \emph{B16als\_v2} VM.
+Both machines are in the same datacenter, with a 1.1ms (0.5ms of standard deviation in 100 pings) round-trip latency between them.
+We use this deployment to measure the overheads incurred by our protocol in a distributed setting, and to calibrate parameters of a simulated version of the system.
+
+Indeed, due to the high number of configurations to evaluate, we also implement a simulated version of \sysname and of baselines:
+all experiment design points presented in this paper represent around 40k protocol runs and 1TB of requests' lifecycle traces.
+
+Protocols are simulated using Omnet++~\cite{vargaOverviewOMNeTSimulation2008}, a discrete event simulator.
+Only the protocols involved during requests' lifecycle are simulated: 
+in practice, TEE remote attestation can be performed as an independent first phase between each consumer-provider pair.
+The search phase, which consists of many request-responses interactions, may start after this attestation.
+Therefore, remote attestation is left out of simulations.
+During the search phase, as in our assumptions in \Cref{sec:problem_statement}, providers receive the same $\textbf{<NEW>}$ messages at the same time.
+Additionally, we do not consider the delay introduced by handling these messages, i.e., they are available instantly when they arrive at providers, to be used in subsequent requests.
+
+The code for the distributed and simulated implementations, as well as the analysis scripts, are available publicly~\cite{coolTEEcode}.
+
+\subsection{Experiment configurations and baselines}
+
+Based on the implementation and networking dataset, we define experiment configurations that differ across the following dimensions.
+
+\subsubsection{Simulation parameters}
+
+Simulation experiments are run with a total of $N_{C}=100$ consumers and $N_{P}=8$ providers.
+Providers each serve requests at a rate of 160 requests per second, i.e., they take $D=6.25ms$ to handle a request.
+This maximum throughput value was determined based on performance experiments of DeSearch~\cite{liBringingDecentralizedSearch2021} in our deployment environment.
+
+Consumers send requests at equal rates $\lambda_{r}$, such that the total request rate is $\lambda_{T}=N_{C}\lambda_{r}=\frac{\rho}{D} N_{P}$, with $\rho$ the target overall system load. 
+Inter-request emission delays are exponentially distributed with parameter $\lambda_{r}$.
+
+Assets arrive on the market at an average rate of $\lambda_{a}=100$ assets per second, according to an exponential distribution $\mathit{Exp}(\lambda_{a})$. 
+
+We also discuss results of experiments run either with periodic asset arrivals, or periodic inter-request emission delays, but they will not be illustrated in the paper.
+
+\subsubsection{Network topologies}
+We consider two network topology types: (1)``same datacenter'' topology, where latencies are considered equal between all actors and (2) ``PlanetLab'' topology, where latencies are heterogeneous and assigned using the PlanetLab dataset~\cite{zhuNetworkLatencyEstimation2017}. This dataset represents the average roundtrip latencies between 490 nodes of the PlanetLab network, positioned across the globe. 
+
+
+%\subsubsection{Network topologies}
+%We run experiments under one of two network topology types: respectively with equal and heterogeneous latencies. 
+%In the equal-latency setup, hereafter called ``same datacenter'' topology, all actors, whatever their role and behaviour (consumers or providers, honest or malicious), are colocated in the same datacenter: $d_{net}=0$ between all pairs of actors. \etienne{this is contradictory with section 6.2 that mentions a latency of 27 ms between nodes (pretty high for the same network btw, make sure this is not 26 us).}
+%In the heterogeneous-latency setup, referred to as the ``PlanetLab'' topology, we use the PlanetLab dataset~\cite{zhuNetworkLatencyEstimation2017} to setup our network topologies. 
+%This dataset represents the average roundtrip latencies between 490 nodes of the PlanetLab network, positioned across the globe. $N_{C}$ consumers and $N_{P}$ providers are each randomly and uniformly assigned a node in the topology defined by the PlanetLab dataset. Colocation of actors is permitted: multiple actors can be placed on the same node on the PlanetLab topology, in which case $d_{i,j}=0$ for colocated consumer $i$ and provider $j$. 
+
+
+\subsubsection{Attack scenarios}
+
+In the following experiments, malicious providers' proportion $p_{M}$ is in $[0,1]$, while malicious consumer's $c_{M}$ is set to 50\%, for more intuitive result analysis: 
+in the fault-free case without malicious providers, neither the malicious or the honest consumers should have an advantage over the other if they are present with equal proportions. 
+
+The protocol can be attacked according to the strategies defined in \Cref{sec:problem_statement}. 
+Experiments configurations are labelled with the name of the attack strategy, or ``fault-free'' if no attack is performed.
+
+\textit{Timing attacks} require a malicious artificial delay parameter $\delta_{att}$, which we set to $\delta_{att}=50ms$ in the experiments with \textit{timing attacks}. 
+This choice was made based on calibration experiments and will be discussed in \Cref{ssec:res-malPL}.
+
+\subsubsection{Provider selection policies}
+Consumers select providers to handle an individual request using one of the following policies: 
+a uniformly random selection of a provider among the $N_{P}$ providers, referred to as ``DeSearch-like'' selection, 
+or a selection based on \sysname's policy, locally optimizing the selection of providers to minimize end-to-end latencies, referred to as ``COoL'' selection.
+
+At the provider-side, in the same-datacenter setup, we also evaluate the impact of \sysname with the state-of-the-art Power-of-Two (PoT) load balancing protocol~\cite{mitzenmacherPowerTwoChoices2001}. 
+In particular, we evaluate spatial Power-of-Two~\cite{panigrahyAnalysisEvaluationProximitybased2022} (sPoT), which selects the least-loaded of a consumer's two closest providers.
+We also consider a variant of \sysname augmented with PoT, which we call, which we call ``COoL-PoT''.
+In COoL-PoT, a consumer's \emph{Provider Selection Module} randomly selects $k=2$ distinct providers (proportionally to their selection ratios $r_{j}$).
+Both providers will exchange with each other their respective queue lengths at the request's arrival: the provider with the shortest queue handles it, while the other drops the request. 
+Ties are broken deterministically, e.g., based on the lowest-valued hash of the provider's ID and the request's nonce (similarly to rendezvous hashing~\cite{663936}).
+
+Note that this new mechanism introduces a PoT specific attack, which we refer to as a ``Queue attack'' (or ``Queue-T attack'' when combined with timing attacks).
+In a queue attack, malicious providers keep a secondary queue outside the TEE, so that the TEE's queue always remains at a length $L\leq1$ (considering a request being handled remains at the front of the queue until served).
+This means that from the point of view of honest providers, malicious providers more often have shorter queues than them and consequently, will yield service of a request to them more often.
+
+We evaluate the state-of-the-art solutions that rely on sending the same request to multiple providers as a class of ``multiprovider'' selection policies, with $k$ the number of providers selected for the same request content.
+Only honest consumers perform this multiple provider selection, aiming to reduce IFR disadvantages.
+Malicious consumers only send requests to one destination (i.e., $k=1$ in all cases), because they are treated the same way by all providers.
