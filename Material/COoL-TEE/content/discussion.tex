@@ -1,0 +1,19 @@
+\section{Discussion}\label{sec:discussion}
+
+\subsection{On the asset arrival process}
+
+Presented experiments assume that the arrival process of assets is a Poisson process, i.e., that the time between two consecutive asset arrivals is exponentially distributed.
+To assess that assumption, we analysed the SuperRare dataset~\cite{superrare}, which comprises the registration timestamps of 22k NFT art assets from the SuperRare NFT art gallery, during the month of April 2018. 
+We indeed observed that the distribution of inter-arrival times between assets seems to contain an exponential component.
+
+For generality, we also considered a periodic arrival process, where assets arrive each period $T$ in batches of size $N_{a}$, where $N_{a}$ follows a Poisson distribution with mean $\lambda_{a}T$.
+Experiments with periodic asset arrivals, while not illustrated here, give similar results to exponentially distributed asset arrivals presented in the previous section, albeit with a higher variance in the same experiment duration. 
+This higher variance can be explained by the fewer timestamps where new assets appear in a given timeframe, due to batching of asset arrivals.
+
+\subsection{On finer-grained provider selection}
+
+If we focus the selection of providers on the main objective, i.e., minimizing the time between response generation and response reception, at the expense of round-trip times, the presence of TEEs enables more fine-grained selection of providers in that context.
+Indeed, the TEE can provide trustworthy information about its inner state, like the length of the queue at a request's arrival, the evolution of the queue length over time, or the total number of handled requests.
+The first gives enables an estimate of the residency time of a request in the TEE, and the last two give a trend on the TEE's load and throughput.
+Trusted time is a complex problem in TEEs, which can achieved or bypassed in certain contexts (e.g., using a provider's incentive to be truthful~\cite{alder2019s}, inapplicable in our context; an external trusted time source~\cite{hamidy2023t3e}). 
+In our case, the consumer can use its own time source to approximate the TEE's time-based metrics. For example, consider a model of the TEE as an M/D/1 queue of deterministic service time $D$. The TEE gives the previously mentioned information (e.g., the queue length) alongside the search response. Given the round-trip latency for different queue lengths at arrival, by linear regression, the consumer can extrapolate the service rate $\mu_{s}$ (the slope) and $D$. The intercept corresponds to the two-way network latency and, assuming symmetric latencies, we can estimate the one-way network latency $\delta_{i,j}$. Note that without synchrony assumptions, it is still difficult to detect timing attacks, i.e., purposely assymetric latencies. The number of handled requests between two of a consumer's own approximates the incoming request rate to the TEE $\lambda$, which given $\mu_{s}$, helps estimate the TEE's load $\rho=\frac{\lambda}{\mu_{s}}$. Knowing the TEE's static and dynamic parameters, a consumer can better predict the impact its provider selection has on the response latency, and tune its selection accordingly.
