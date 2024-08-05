@@ -53,6 +53,12 @@ Also explored the iExec blockchain (graphQL) to look at possible error analysis 
 ### 2024-07-17: Ruin Theory
 Investigated the application of ruin theory to assess how fast actors can get ruined within the decentralized computing marketplace using a slashing strategie.
 
+### 2024-08-02: Blind Slashing Synthesis
+A comprehensive synthesis of all work completed to date, aimed at enhancing clarity and readability.
+
+### Material
+A collection of all relevant external resources provided to support the completion of the mission.  
+
 ## References
 
 1. iExec Documentation: [https://protocol.docs.iex.ec/]
