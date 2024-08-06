@@ -59,6 +59,10 @@ A comprehensive synthesis of all work completed to date, aimed at enhancing clar
 ### Material
 A collection of all relevant external resources provided to support the completion of the mission.  
 
+## TODO
+
+Explore Token Currated Registeries with a possibility to have list of trusted and reliable applications / datasets... or even graph / pairs of assets that work well togethers.  
+
 ## References
 
 1. iExec Documentation: [https://protocol.docs.iex.ec/]
