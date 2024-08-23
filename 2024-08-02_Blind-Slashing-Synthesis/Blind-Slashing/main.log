@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.2)  5 AUG 2024 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.2)  6 AUG 2024 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -872,514 +872,56 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 259.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 10.0pt on input line 259.
- (./content/introduction.tex
-
-Package natbib Warning: Citation `skim' on page 1 undefined on input line 26.
-
-
-Package natbib Warning: Citation `cuthbertsonFacebookUsersReport2021' on page 1 undefined on input line 26.
-
-
-Package natbib Warning: Citation `swearingenWhenAmazonWeb2018' on page 1 undefined on input line 26.
-
-
-Package natbib Warning: Citation `CensorshipGoogle2024' on page 1 undefined on input line 26.
-
-
-Package natbib Warning: Citation `gargSteemitCensoringUsers2019' on page 1 undefined on input line 26.
-
-
-Package natbib Warning: Citation `glaserHowAppleAmazon2017' on page 1 undefined on input line 26.
-
-
-Package natbib Warning: Citation `doan2022towards' on page 1 undefined on input line 30.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 1 undefined on input line 40.
-
-
-Package natbib Warning: Citation `keizerDittoDecentralisedSimilarity2023' on page 1 undefined on input line 40.
-
-
-Package natbib Warning: Citation `zichichi_towards_2021' on page 1 undefined on input line 40.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 1 undefined on input line 41.
-
-
-Package natbib Warning: Citation `costan2016intel' on page 1 undefined on input line 42.
-
-<imports/img/mal-acqshare-cons-behav-prov-behav-werr_500-SEND-RECV-100;0ms,50ms;0,0.00001x100;6I12;50.pdf, id=127, 248.78012pt x 193.51666pt>
-File: imports/img/mal-acqshare-cons-behav-prov-behav-werr_500-SEND-RECV-100;0ms,50ms;0,0.00001x100;6I12;50.pdf Graphic file (type pdf)
-<use imports/img/mal-acqshare-cons-behav-prov-behav-werr_500-SEND-RECV-100;0ms,50ms;0,0.00001x100;6I12;50.pdf>
-Package pdftex.def Info: imports/img/mal-acqshare-cons-behav-prov-behav-werr_500-SEND-RECV-100;0ms,50ms;0,0.00001x100;6I12;50.pdf  used on input line 48.
-(pdftex.def)             Requested size: 199.02435pt x 154.81352pt.
+ (./content/introduction.tex) (./content/problem_statement.tex) (./content/overview.tex) (./content/solution.tex) (./content/experimental_protocol.tex) (./content/results.tex) (./content/related_work.tex) (./content/conclusion.tex) (./content/bibliography.tex (./main.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 51.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 51.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 51.
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-
-Class acmart Warning: A possible image without description on input line 53.
-
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 66.
-[1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc} <./imports/img/mal-acqshare-cons-behav-prov-behav-werr_500-SEND-RECV-100;0ms,50ms;0,0.00001x100;6I12;50.pdf>]
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 2 undefined on input line 68.
-
-
-Package natbib Warning: Citation `coolTEEcode' on page 2 undefined on input line 73.
-
-) (./content/problem_statement.tex
-<imports/img/System Model.pdf, id=157, 252.945pt x 90.3375pt>
-File: imports/img/System Model.pdf Graphic file (type pdf)
-<use imports/img/System Model.pdf>
-Package pdftex.def Info: imports/img/System Model.pdf  used on input line 14.
-(pdftex.def)             Requested size: 202.35626pt x 72.27008pt.
-
-
-Class acmart Warning: A possible image without description on input line 17.
-
-
-Underfull \vbox (badness 1558) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 10.0pt on input line 42.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 42.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 42.
-
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 47.
+(Font)              scaled to size 8.0pt on input line 43.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 47.
+(Font)              scaled to size 8.0pt on input line 50.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 47.
- [2.2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.enc} <./imports/img/System Model.pdf>]
 
-Package natbib Warning: Citation `costan2016intel' on page 3 undefined on input line 63.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 3 undefined on input line 75.
-
-
-Package natbib Warning: Citation `doan2022towards' on page 3 undefined on input line 76.
-
-
-Package natbib Warning: Citation `wangCircuitORAMTightness2015' on page 3 undefined on input line 82.
-
-
-Package natbib Warning: Citation `wangCircuitORAMTightness2015' on page 3 undefined on input line 83.
-
-
-Overfull \hbox (6.27632pt too wide) in paragraph at lines 88--92
-\T1/LinuxLibertineT-TLF/m/n/10 (-20) We as-sume that a frac-tion $\OML/nxlmi/m/it/10 c[]$ \T1/LinuxLibertineT-TLF/m/n/10 (-20) of con-sumers and $\OML/nxlmi/m/it/10 p[]$ \T1/LinuxLibertineT-TLF/m/n/10 (-20) of providers
+Underfull \hbox (badness 1057) in paragraph at lines 42--51
+[]\T1/LinuxLibertineT-TLF/m/n/8 (+20) K. G. Bin-more. 2007.  \T1/LinuxLibertineT-TLF/m/it/8 (+20) Game the-ory : a very short in-tro-duc-tion\T1/LinuxLibertineT-TLF/m/n/8 (+20) .
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3.3]
-<imports/img/Attack Model.pdf, id=254, page=1, 252.945pt x 57.21375pt>
-File: imports/img/Attack Model.pdf Graphic file (type pdf)
-<use imports/img/Attack Model.pdf, page 1>
-Package pdftex.def Info: imports/img/Attack Model.pdf , page1 used on input line 120.
-(pdftex.def)             Requested size: 202.35626pt x 45.77104pt.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 122.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 122.
-<imports/img/Attack Model.pdf, id=255, page=2, 252.945pt x 57.21375pt>
-File: imports/img/Attack Model.pdf Graphic file (type pdf)
-<use imports/img/Attack Model.pdf, page 2>
-Package pdftex.def Info: imports/img/Attack Model.pdf , page2 used on input line 127.
-(pdftex.def)             Requested size: 202.35626pt x 45.77104pt.
-<imports/img/Attack Model.pdf, id=256, page=3, 252.945pt x 57.21375pt>
-File: imports/img/Attack Model.pdf Graphic file (type pdf)
-<use imports/img/Attack Model.pdf, page 3>
-Package pdftex.def Info: imports/img/Attack Model.pdf , page3 used on input line 134.
-(pdftex.def)             Requested size: 202.35626pt x 45.77104pt.
-
-
-Class acmart Warning: A possible image without description on input line 141.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 4 undefined on input line 166.
-
-) (./content/overview.tex
-Underfull \vbox (badness 1655) has occurred while \output is active []
-
- [4.4 <./imports/img/Attack Model.pdf> <./imports/img/Attack Model.pdf
-
-pdfTeX warning: pdflatex (file ./imports/img/Attack Model.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./imports/img/Attack Model.pdf
-
-pdfTeX warning: pdflatex (file ./imports/img/Attack Model.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<imports/img/System Overview.pdf, id=328, 252.945pt x 180.675pt>
-File: imports/img/System Overview.pdf Graphic file (type pdf)
-<use imports/img/System Overview.pdf>
-Package pdftex.def Info: imports/img/System Overview.pdf  used on input line 41.
-(pdftex.def)             Requested size: 234.89043pt x 171.64026pt.
-
-
-Class acmart Warning: A possible image without description on input line 45.
-
-) (./content/solution.tex
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 15.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 15.
- [5.5 <./imports/img/System Overview.pdf>]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 62.
-
-
-Package natbib Warning: Citation `slivkins2019introduction' on page 6 undefined on input line 77.
-
-
-Package natbib Warning: Citation `slivkins2019introduction' on page 6 undefined on input line 79.
-
-
-Package natbib Warning: Citation `fiducioso2019safe' on page 6 undefined on input line 83.
-
-
-Package natbib Warning: Citation `xu2023config' on page 6 undefined on input line 83.
-
-
-Package natbib Warning: Citation `auer2002nonstochastic' on page 6 undefined on input line 84.
-
-
-Package natbib Warning: Citation `ziegler1942optimum' on page 6 undefined on input line 86.
-
-) (./content/experimental_protocol.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6.6]
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 7 undefined on input line 27.
-
-
-Package natbib Warning: Citation `vargaOverviewOMNeTSimulation2008' on page 7 undefined on input line 35.
-
-
-Package natbib Warning: Citation `coolTEEcode' on page 7 undefined on input line 43.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 7 undefined on input line 53.
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 58.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.3pt on input line 58.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 5.5pt on input line 58.
-
-Package natbib Warning: Citation `zhuNetworkLatencyEstimation2017' on page 7 undefined on input line 63.
-
-
-Overfull \hbox (5.81647pt too wide) in paragraph at lines 63--64
- \T1/LinuxLibertineT-TLF/b/n/10 (-20) 5.3.2 Net-work topolo-gies.[] \T1/LinuxLibertineT-TLF/m/n/10 (-20) We con-sider two net-work topol-
- []
-
-
-Underfull \vbox (badness 1137) has occurred while \output is active []
-
- [7.7{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc}]
-Overfull \hbox (19.0758pt too wide) in paragraph at lines 85--88
- \T1/LinuxLibertineT-TLF/b/n/10 (-20) 5.3.4 Provider se-lec-tion poli-cies.[] \T1/LinuxLibertineT-TLF/m/n/10 (-20) Con-sumers se-lect providers
- []
-
-
-Package natbib Warning: Citation `mitzenmacherPowerTwoChoices2001' on page 8 undefined on input line 89.
-
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 8 undefined on input line 90.
-
-
-Package natbib Warning: Citation `663936' on page 8 undefined on input line 94.
-
-) (./content/results.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<imports/img/mean_latency_vs_total_throughput.pdf, id=453, 305.03693pt x 159.15216pt>
-File: imports/img/mean_latency_vs_total_throughput.pdf Graphic file (type pdf)
-<use imports/img/mean_latency_vs_total_throughput.pdf>
-Package pdftex.def Info: imports/img/mean_latency_vs_total_throughput.pdf  used on input line 13.
-(pdftex.def)             Requested size: 228.77711pt x 119.36382pt.
-
-
-Package natbib Warning: Citation `wangCircuitORAMTightness2015' on page 8 undefined on input line 14.
-
-
-Package natbib Warning: Citation `wangCircuitORAMTightness2015' on page 8 undefined on input line 14.
-
-
-Class acmart Warning: A possible image without description on input line 16.
-
-<imports/img/wait500ByzRho100-WtA,+2250s-lat-dist-cumul-quantiles-SEND-RECV-0ms;0.00001x100,0;0.5;25.pdf, id=456, 317.98799pt x 137.63039pt>
-File: imports/img/wait500ByzRho100-WtA,+2250s-lat-dist-cumul-quantiles-SEND-RECV-0ms;0.00001x100,0;0.5;25.pdf Graphic file (type pdf)
-<use imports/img/wait500ByzRho100-WtA,+2250s-lat-dist-cumul-quantiles-SEND-RECV-0ms;0.00001x100,0;0.5;25.pdf>
-Package pdftex.def Info: imports/img/wait500ByzRho100-WtA,+2250s-lat-dist-cumul-quantiles-SEND-RECV-0ms;0.00001x100,0;0.5;25.pdf  used on input line 31.
-(pdftex.def)             Requested size: 238.49039pt x 103.22252pt.
-
-Class acmart Warning: A possible image without description on input line 34.
-
-
-Overfull \hbox (16.16246pt too wide) in paragraph at lines 36--41
-\T1/LinuxLibertineT-TLF/m/n/10 (-20) sponse times with DeSearch-like se-lec-tion. Mean-while, DeSearch-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8.8 <./imports/img/mean_latency_vs_total_throughput.pdf>]
-
-Package natbib Warning: Citation `mitzenmacherPowerTwoChoices2001' on page 9 undefined on input line 45.
-
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 9 undefined on input line 49.
-
-<imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;0ms,50ms;0.00001x100,0;0,0.875,0.375,0.25,0.625,0.125,0.75,0.5;75,18.75,9.375,37.5.pdf, id=488, 317.98799pt x 173.448pt>
-File: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;0ms,50ms;0.00001x100,0;0,0.875,0.375,0.25,0.625,0.125,0.75,0.5;75,18.75,9.375,37.5.pdf Graphic file (type pdf)
-<use imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;0ms,50ms;0.00001x100,0;0,0.875,0.375,0.25,0.625,0.125,0.75,0.5;75,18.75,9.375,37.5.pdf>
-Package pdftex.def Info: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;0ms,50ms;0.00001x100,0;0,0.875,0.375,0.25,0.625,0.125,0.75,0.5;75,18.75,9.375,37.5.pdf  used on input line 56.
-(pdftex.def)             Requested size: 238.49039pt x 130.08568pt.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 57.
-<imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;50ms,0ms;0.00001x100,0;0.625,0,0.75,0.25,0.375,0.875,0.125,0.5;75;true,false.pdf, id=489, 317.98799pt x 173.448pt>
-File: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;50ms,0ms;0.00001x100,0;0.625,0,0.75,0.25,0.375,0.875,0.125,0.5;75;true,false.pdf Graphic file (type pdf)
-<use imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;50ms,0ms;0.00001x100,0;0.625,0,0.75,0.25,0.375,0.875,0.125,0.5;75;true,false.pdf>
-Package pdftex.def Info: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;50ms,0ms;0.00001x100,0;0.625,0,0.75,0.25,0.375,0.875,0.125,0.5;75;true,false.pdf  used on input line 62.
-(pdftex.def)             Requested size: 238.49039pt x 130.08568pt.
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 9 undefined on input line 63.
-
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 9 undefined on input line 63.
-
-
-Class acmart Warning: A possible image without description on input line 70.
-
-
-Package natbib Warning: Citation `stathakopoulouAddingFairnessOrder2021' on page 9 undefined on input line 76.
-
-
-Package natbib Warning: Citation `kelkarThemisFastStrong2023' on page 9 undefined on input line 76.
-
-
-Overfull \hbox (4.33101pt too wide) in paragraph at lines 74--84
- \T1/LinuxLibertineT-TLF/b/n/10 (-20) 6.2.1 Mul-ti-provider se-lec-tion.[] \T1/LinuxLibertineT-TLF/m/n/10 (-20) We com-pare mul-ti-provider
- []
-
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 9 undefined on input line 87.
-
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 9 undefined on input line 90.
-
-<imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-50ms,0ms;0.00001x100;0.125,0.25,0.5,0.875,0.375,0,0.75,0.625;75;100.pdf, id=494, 317.98799pt x 173.448pt>
-File: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-50ms,0ms;0.00001x100;0.125,0.25,0.5,0.875,0.375,0,0.75,0.625;75;100.pdf Graphic file (type pdf)
-<use imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-50ms,0ms;0.00001x100;0.125,0.25,0.5,0.875,0.375,0,0.75,0.625;75;100.pdf>
-Package pdftex.def Info: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-50ms,0ms;0.00001x100;0.125,0.25,0.5,0.875,0.375,0,0.75,0.625;75;100.pdf  used on input line 106.
-(pdftex.def)             Requested size: 238.49039pt x 130.08568pt.
-<imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV.pdf, id=495, 317.98799pt x 173.448pt>
-File: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV.pdf Graphic file (type pdf)
-<use imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV.pdf>
-Package pdftex.def Info: imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV.pdf  used on input line 112.
-(pdftex.def)             Requested size: 238.49039pt x 130.08568pt.
-
-Class acmart Warning: A possible image without description on input line 121.
-
-
-Underfull \vbox (badness 1014) has occurred while \output is active []
-
- [9.9 <./imports/img/wait500ByzRho100-WtA,+2250s-lat-dist-cumul-quantiles-SEND-RECV-0ms;0.00001x100,0;0.5;25.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package natbib Warning: Citation `HorizontalPodAutoscaling' on page 10 undefined on input line 152.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10.10 <./imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;0ms,50ms;0.00001x100,0;0,0.875,0.375,0.25,0.625,0.125,0.75,0.5;75,18.75,9.375,37.5.pdf> <./imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-100;50ms,0ms;0.00001x100,0;0.625,0,0.75,0.25,0.375,0.875,0.125,0.5;75;true,false.pdf> <./imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV-50ms,0ms;0.00001x100;0.125,0.25,0.5,0.875,0.375,0,0.75,0.625;75;100.pdf> <./imports/img/acqshare-cons-behav-prov-behav-plot-werr_500-SEND-RECV.pdf>]
-<imports/img/wait500Byz-WtA,+2250s;noTEE,WtA,+2250s-nbsa-cumul-wt-consprov-behav-SERVE-RECV-50ms;0,0.00001x10;0.5;25.pdf, id=665, 325.215pt x 162.6075pt>
-File: imports/img/wait500Byz-WtA,+2250s;noTEE,WtA,+2250s-nbsa-cumul-wt-consprov-behav-SERVE-RECV-50ms;0,0.00001x10;0.5;25.pdf Graphic file (type pdf)
-<use imports/img/wait500Byz-WtA,+2250s;noTEE,WtA,+2250s-nbsa-cumul-wt-consprov-behav-SERVE-RECV-50ms;0,0.00001x10;0.5;25.pdf>
-Package pdftex.def Info: imports/img/wait500Byz-WtA,+2250s;noTEE,WtA,+2250s-nbsa-cumul-wt-consprov-behav-SERVE-RECV-50ms;0,0.00001x10;0.5;25.pdf  used on input line 161.
-(pdftex.def)             Requested size: 243.91064pt x 121.95532pt.
-
-Overfull \hbox (2.96565pt too wide) in paragraph at lines 161--162
- [][] 
- []
-
-
-Class acmart Warning: A possible image without description on input line 164.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.865pt too wide) in paragraph at lines 177--182
-[]\T1/LinuxLibertineT-TLF/m/n/10 (-20) Regarding dNBS-assets by hon-est and ma-li-cious con-sumers,
- []
-
-
-Overfull \hbox (1.21355pt too wide) in paragraph at lines 177--182
-\T1/LinuxLibertineT-TLF/m/n/10 (-20) due to lack of space, we il-lus-trate the re-sults in heterogeneous-
- []
-
-
-Overfull \hbox (12.94838pt too wide) in paragraph at lines 177--182
-\T1/LinuxLibertineT-TLF/m/n/10 (-20) same-datacenter setup re-sults. Com-pared to the same-datacenter
- []
-
-) (./content/related_work.tex
-
-Package natbib Warning: Citation `zichichi_towards_2021' on page 11 undefined on input line 9.
-
-
-Package natbib Warning: Citation `keizerDittoDecentralisedSimilarity2023' on page 11 undefined on input line 9.
-
-
-Package natbib Warning: Citation `zichichi_towards_2021' on page 11 undefined on input line 10.
-
-
-Package natbib Warning: Citation `Graph' on page 11 undefined on input line 11.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 11 undefined on input line 13.
-
-
-Underfull \vbox (badness 1558) has occurred while \output is active []
-
- [11.11 <./imports/img/wait500Byz-WtA,+2250s;noTEE,WtA,+2250s-nbsa-cumul-wt-consprov-behav-SERVE-RECV-50ms;0,0.00001x10;0.5;25.pdf>]
-
-Package natbib Warning: Citation `torresFrontrunnerJonesRaiders2021' on page 12 undefined on input line 23.
-
-
-Package natbib Warning: Citation `bentovTesseractRealTimeCryptocurrency2019' on page 12 undefined on input line 24.
-
-
-Package natbib Warning: Citation `kelkarThemisFastStrong2023' on page 12 undefined on input line 24.
-
-
-Package natbib Warning: Citation `stathakopoulouAddingFairnessOrder2021' on page 12 undefined on input line 24.
-
-
-Package natbib Warning: Citation `cachinQuickOrderFairness2022' on page 12 undefined on input line 28.
-
-
-Package natbib Warning: Citation `kelkarThemisFastStrong2023' on page 12 undefined on input line 28.
-
-
-Package natbib Warning: Citation `stathakopoulouAddingFairnessOrder2021' on page 12 undefined on input line 30.
-
-
-Package natbib Warning: Citation `TorProjectPrivacy' on page 12 undefined on input line 30.
-
-
-Package natbib Warning: Citation `liBringingDecentralizedSearch2021' on page 12 undefined on input line 42.
-
-
-Package natbib Warning: Citation `keizerDittoDecentralisedSimilarity2023' on page 12 undefined on input line 42.
-
-
-Package natbib Warning: Citation `zichichi_towards_2021' on page 12 undefined on input line 42.
-
-
-Package natbib Warning: Citation `muhlbergerFoundationalOraclePatterns2020' on page 12 undefined on input line 42.
-
-
-Package natbib Warning: Citation `etherscan.ioEthereumAverageBlock' on page 12 undefined on input line 45.
-
-
-Package natbib Warning: Citation `caldarelliOverviewBlockchainOracle2022' on page 12 undefined on input line 48.
-
-
-Package natbib Warning: Citation `al-breikiTrustworthyBlockchainOracles2020' on page 12 undefined on input line 48.
-
-
-Package natbib Warning: Citation `heissOraclesTrustworthyData2019' on page 12 undefined on input line 48.
-
-
-Package natbib Warning: Citation `liuGowiththewinnerPerformanceBased2016' on page 12 undefined on input line 56.
-
-
-Package natbib Warning: Citation `panigrahyAnalysisEvaluationProximitybased2022' on page 12 undefined on input line 59.
-
-
-Package natbib Warning: Citation `mitzenmacherPowerTwoChoices2001' on page 12 undefined on input line 59.
-
-
-Package natbib Warning: Citation `wendellDONARDecentralizedServer2010' on page 12 undefined on input line 64.
-
-) (./content/conclusion.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12.12]) (./content/bibliography.tex (./main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 40.
 
 ))
+Overfull \vbox (1.60501pt too high) has occurred while \output is active []
 
-Package natbib Warning: There were undefined citations.
-
-
-Class acmart Warning: Some images may lack descriptions.
-
-
-Overfull \vbox (2.36pt too high) has occurred while \output is active []
-
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 271.
  (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [13.13] (./main.aux)
+) [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_ki75ao.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 43EDEC0F1CC33705BC45D858C51C97E4;5777.
+(rerunfilecheck)             Checksum: 75E93A480902081A38F08D3C8A87AA0A;1411.
  ) 
 Here is how much of TeX's memory you used:
- 27278 strings out of 476106
- 480072 string characters out of 5793934
- 1960975 words of memory out of 5000000
- 48083 multiletter control sequences out of 15000+600000
- 748216 words of font info for 443 fonts, out of 8000000 for 9000
+ 26458 strings out of 476106
+ 454375 string characters out of 5793934
+ 1954975 words of memory out of 5000000
+ 47768 multiletter control sequences out of 15000+600000
+ 639547 words of font info for 147 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 90i,17n,131p,1149b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMathRM.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (13 pages, 1455464 bytes).
+ 90i,16n,131p,1149b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb>
+Output written on main.pdf (1 page, 320837 bytes).
 PDF statistics:
- 808 PDF objects out of 1000 (max. 8388607)
- 618 compressed objects within 7 object streams
- 89 named destinations out of 1000 (max. 500000)
- 98626 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 41057 words of extra memory for PDF output out of 42996 (max. 10000000)
 

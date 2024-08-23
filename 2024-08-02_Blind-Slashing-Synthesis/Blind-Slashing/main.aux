@@ -2,211 +2,39 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{skim}
-\citation{cuthbertsonFacebookUsersReport2021,swearingenWhenAmazonWeb2018}
-\citation{CensorshipGoogle2024,gargSteemitCensoringUsers2019,glaserHowAppleAmazon2017}
-\citation{doan2022towards}
-\citation{liBringingDecentralizedSearch2021,keizerDittoDecentralisedSimilarity2023,zichichi_towards_2021}
-\citation{liBringingDecentralizedSearch2021}
-\citation{costan2016intel}
-\providecommand \oddpage@label [2]{}
-\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \emph  {Information front-running: without TEEs or without latency-aware provider selection, malicious consumers are able to be more often the first to see new assets} | Share of never-before-seen assets discovered first by malicious consumers ($\frac  {50}{100}$ of total consumers), under different configurations. $\frac  {6}{12}$ search providers are malicious and the total system load is 50\%, see results in \Cref  {sec:results} for a more exhaustive analysis.}}{1}{figure.caption.4}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:motivation}{{1}{1}{\emph {Information front-running: without TEEs or without latency-aware provider selection, malicious consumers are able to be more often the first to see new assets} | Share of never-before-seen assets discovered first by malicious consumers ($\frac {50}{100}$ of total consumers), under different configurations. $\frac {6}{12}$ search providers are malicious and the total system load is 50\%, see results in \Cref {sec:results} for a more exhaustive analysis}{figure.caption.4}{}}
-\newlabel{fig:motivation@cref}{{[figure][1][]1}{[1][1][]1}}
-\citation{liBringingDecentralizedSearch2021}
-\citation{coolTEEcode}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Model \& problem statement}{2}{section.2}\protected@file@percent }
-\newlabel{sec:problem_statement}{{2}{2}{Model \& problem statement}{section.2}{}}
-\newlabel{sec:problem_statement@cref}{{[section][2][]2}{[1][2][]2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Roles \& interactions}{2}{subsection.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \emph  {Marketplace search model} | Consumers send requests to Providers of the search mechanism about the market's state; Providers then respond with a list of assets they previously learned from the Market over time.}}{2}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:system_model}{{2}{2}{\emph {Marketplace search model} | Consumers send requests to Providers of the search mechanism about the market's state; Providers then respond with a list of assets they previously learned from the Market over time}{figure.caption.5}{}}
-\newlabel{fig:system_model@cref}{{[figure][2][]2}{[1][2][]2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}System formalization \& constraints}{2}{subsection.2.2}\protected@file@percent }
-\citation{costan2016intel}
-\citation{liBringingDecentralizedSearch2021}
-\citation{doan2022towards}
-\citation{wangCircuitORAMTightness2015}
-\citation{wangCircuitORAMTightness2015}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Building blocks}{3}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Trusted Execution Environments}{3}{subsubsection.2.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}DeSearch\nonbreakingspace \citep  {liBringingDecentralizedSearch2021}}{3}{subsubsection.2.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Threat model}{3}{subsection.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Adversarial objective}{3}{subsubsection.2.4.1}\protected@file@percent }
-\citation{liBringingDecentralizedSearch2021}
-\newlabel{fig:fault_free}{{3a}{4}{Fault-free | Consumer and Provider exchange a request for a response containing a list of assets}{figure.caption.6}{}}
-\newlabel{fig:fault_free@cref}{{[subfigure][1][3]3a}{[1][4][]4}}
-\newlabel{sub@fig:fault_free}{{a}{4}{Fault-free | Consumer and Provider exchange a request for a response containing a list of assets}{figure.caption.6}{}}
-\newlabel{sub@fig:fault_free@cref}{{[subfigure][1][3]3a}{[1][4][]4}}
-\newlabel{fig:content_attack}{{3b}{4}{Content attack | Without TEEs, a malicious provider can send back fake or old assets to hinder asset discovery by honest consumers}{figure.caption.6}{}}
-\newlabel{fig:content_attack@cref}{{[subfigure][2][3]3b}{[1][4][]4}}
-\newlabel{sub@fig:content_attack}{{b}{4}{Content attack | Without TEEs, a malicious provider can send back fake or old assets to hinder asset discovery by honest consumers}{figure.caption.6}{}}
-\newlabel{sub@fig:content_attack@cref}{{[subfigure][2][3]3b}{[1][4][]4}}
-\newlabel{fig:timing_attack}{{3c}{4}{Timing attack | Content attacks (\Cref {sub@fig:content_attack}) are not feasible with TEEs, but providers can still delay responses so honest consumers receive staler market information than malicious ones}{figure.caption.6}{}}
-\newlabel{fig:timing_attack@cref}{{[subfigure][3][3]3c}{[1][4][]4}}
-\newlabel{sub@fig:timing_attack}{{c}{4}{Timing attack | Content attacks (\Cref {sub@fig:content_attack}) are not feasible with TEEs, but providers can still delay responses so honest consumers receive staler market information than malicious ones}{figure.caption.6}{}}
-\newlabel{sub@fig:timing_attack@cref}{{[subfigure][3][3]3c}{[1][4][]4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Provider-side attack models on decentralized marketplace search}}{4}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:attack_model}{{3}{4}{Provider-side attack models on decentralized marketplace search}{figure.caption.6}{}}
-\newlabel{fig:attack_model@cref}{{[figure][3][]3}{[1][4][]4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Attacks formalization}{4}{subsection.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.1}Content attacks}{4}{subsubsection.2.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.2}Timing attacks}{4}{subsubsection.2.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.5.3}Cuckoo attacks}{4}{subsubsection.2.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Blind Slashing\xspace   | Overview}{4}{section.3}\protected@file@percent }
-\newlabel{sec:overview}{{3}{4}{\sysname \space | Overview}{section.3}{}}
-\newlabel{sec:overview@cref}{{[section][3][]3}{[1][4][]4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Protocol delays and timing}{4}{subsection.3.1}\protected@file@percent }
-\newlabel{subsec:search}{{3.1}{4}{Protocol delays and timing}{subsection.3.1}{}}
-\newlabel{subsec:search@cref}{{[subsection][1][3]3.1}{[1][4][]4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces High-level system architecture}}{5}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:system_arch}{{4}{5}{High-level system architecture}{figure.caption.7}{}}
-\newlabel{fig:system_arch@cref}{{[figure][4][]4}{[1][5][]5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}COoL | Client-side Optimization of Latencies}{5}{subsection.3.2}\protected@file@percent }
-\newlabel{subsec:cool}{{3.2}{5}{COoL | Client-side Optimization of Latencies}{subsection.3.2}{}}
-\newlabel{subsec:cool@cref}{{[subsection][2][3]3.2}{[1][5][]5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Blind Slashing\xspace   | Detailed description}{5}{section.4}\protected@file@percent }
-\newlabel{sec:solution}{{4}{5}{\sysname \space | Detailed description}{section.4}{}}
-\newlabel{sec:solution@cref}{{[section][4][]4}{[1][5][]5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Available information}{5}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Module design rationales}{5}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Submodules description}{5}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Provider selection}{5}{subsubsection.4.3.1}\protected@file@percent }
-\citation{slivkins2019introduction}
-\citation{slivkins2019introduction}
-\citation{fiducioso2019safe,xu2023config}
-\citation{auer2002nonstochastic}
-\citation{ziegler1942optimum}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Client-side Optimization of Latencies}{6}{subsubsection.4.3.2}\protected@file@percent }
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces UpdateSelectionRatios}}{6}{algocf.1}\protected@file@percent }
-\newlabel{algo:update_ratios}{{1}{6}{Client-side Optimization of Latencies}{algocf.1}{}}
-\newlabel{algo:update_ratios@cref}{{[algorithm][1][]1}{[1][6][]6}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental protocol}{6}{section.5}\protected@file@percent }
-\newlabel{sec:experimental_protocol}{{5}{6}{Experimental protocol}{section.5}{}}
-\newlabel{sec:experimental_protocol@cref}{{[section][5][]5}{[1][6][]6}}
-\citation{liBringingDecentralizedSearch2021}
-\citation{vargaOverviewOMNeTSimulation2008}
-\citation{coolTEEcode}
-\citation{liBringingDecentralizedSearch2021}
-\citation{zhuNetworkLatencyEstimation2017}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Metrics}{7}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Deployment and simulation setups}{7}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Experiment configurations and baselines}{7}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Simulation parameters}{7}{subsubsection.5.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Network topologies}{7}{subsubsection.5.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Attack scenarios}{7}{subsubsection.5.3.3}\protected@file@percent }
-\citation{mitzenmacherPowerTwoChoices2001}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\citation{663936}
-\citation{wangCircuitORAMTightness2015}
-\citation{wangCircuitORAMTightness2015}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.4}Provider selection policies}{8}{subsubsection.5.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{8}{section.6}\protected@file@percent }
-\newlabel{sec:results}{{6}{8}{Results}{section.6}{}}
-\newlabel{sec:results@cref}{{[section][6][]6}{[1][8][]8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Latency vs. throughput for DeSearch-like and Blind Slashing\xspace  provider selection (among $N_{P}=4$ providers), based on enabled security features (SGX simulation/hardware mode and Circuit-ORAM\nonbreakingspace \citep  {wangCircuitORAMTightness2015})}}{8}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:ff-lat-through}{{5}{8}{Latency vs. throughput for DeSearch-like and \sysname provider selection (among $N_{P}=4$ providers), based on enabled security features (SGX simulation/hardware mode and Circuit-ORAM~\cite {wangCircuitORAMTightness2015})}{figure.caption.9}{}}
-\newlabel{fig:ff-lat-through@cref}{{[figure][5][]5}{[1][8][]8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Fault-free setup}{8}{subsection.6.1}\protected@file@percent }
-\newlabel{ssec:res-FFPL}{{6.1}{8}{Fault-free setup}{subsection.6.1}{}}
-\newlabel{ssec:res-FFPL@cref}{{[subsection][1][6]6.1}{[1][8][]8}}
-\newlabel{ssec:res-bbo}{{6.1.1}{8}{Building block overheads}{subsubsection.6.1.1}{}}
-\newlabel{ssec:res-bbo@cref}{{[subsubsection][1][6,1]6.1.1}{[1][8][]8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Building block overheads}{8}{figure.caption.9}\protected@file@percent }
-\newlabel{ssec:res-lqos}{{6.1.2}{8}{Latency Quality-of-Service}{subsubsection.6.1.2}{}}
-\newlabel{ssec:res-lqos@cref}{{[subsubsection][2][6,1]6.1.2}{[1][8][]8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Latency Quality-of-Service}{8}{figure.caption.10}\protected@file@percent }
-\citation{mitzenmacherPowerTwoChoices2001}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\citation{stathakopoulouAddingFairnessOrder2021,kelkarThemisFastStrong2023}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \emph  {COoL-TEE's latency-aware provider selection enables lower end-to-end response times than DeSearch-like provider selection} | Cumulative response time quantile distributions, aggregated from 500 runs, in a fault-free environment on the PlanetLab network topology, without TEEs, and a total system load $\rho =25\%$, for different selection policies.}}{9}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:ff-woTEE-PLlats}{{6}{9}{\emph {COoL-TEE's latency-aware provider selection enables lower end-to-end response times than DeSearch-like provider selection} | Cumulative response time quantile distributions, aggregated from 500 runs, in a fault-free environment on the PlanetLab network topology, without TEEs, and a total system load $\rho =25\%$, for different selection policies}{figure.caption.10}{}}
-\newlabel{fig:ff-woTEE-PLlats@cref}{{[figure][6][]6}{[1][8][]9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Adversarial same-datacenter setup}{9}{subsection.6.2}\protected@file@percent }
-\newlabel{ssec:res-sameDC}{{6.2}{9}{Adversarial same-datacenter setup}{subsection.6.2}{}}
-\newlabel{ssec:res-sameDC@cref}{{[subsection][2][6]6.2}{[1][9][]9}}
-\newlabel{ssec:res-multi}{{6.2.1}{9}{Multiprovider selection}{subsubsection.6.2.1}{}}
-\newlabel{ssec:res-multi@cref}{{[subsubsection][1][6,2]6.2.1}{[1][9][]9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Multiprovider selection}{9}{subsubsection.6.2.1}\protected@file@percent }
-\newlabel{ssec:res-spot}{{6.2.2}{9}{Provider-side load balancing}{subsubsection.6.2.2}{}}
-\newlabel{ssec:res-spot@cref}{{[subsubsection][2][6,2]6.2.2}{[1][9][]9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Provider-side load balancing}{9}{subsubsection.6.2.2}\protected@file@percent }
-\newlabel{ssec:cs3}{{6.2.3}{9}{COoL selection under fire}{subsubsection.6.2.3}{}}
-\newlabel{ssec:cs3@cref}{{[subsubsection][3][6,2]6.2.3}{[1][9][]9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.3}COoL selection under fire}{9}{figure.caption.12}\protected@file@percent }
-\citation{HorizontalPodAutoscaling}
-\newlabel{fig:byz-sameDC-cs-rw-multi}{{7a}{10}{Impact of TEE \emph {timing attacks} on single-/multi-provider selection}{figure.caption.11}{}}
-\newlabel{fig:byz-sameDC-cs-rw-multi@cref}{{[subfigure][1][7]7a}{[1][9][]10}}
-\newlabel{sub@fig:byz-sameDC-cs-rw-multi}{{a}{10}{Impact of TEE \emph {timing attacks} on single-/multi-provider selection}{figure.caption.11}{}}
-\newlabel{sub@fig:byz-sameDC-cs-rw-multi@cref}{{[subfigure][1][7]7a}{[1][9][]10}}
-\newlabel{fig:byz-sameDC-cs-rw-spot}{{7b}{10}{Impact of TEE-based attacks on sPoT~\cite {panigrahyAnalysisEvaluationProximitybased2022} and COoL selections}{figure.caption.11}{}}
-\newlabel{fig:byz-sameDC-cs-rw-spot@cref}{{[subfigure][2][7]7b}{[1][9][]10}}
-\newlabel{sub@fig:byz-sameDC-cs-rw-spot}{{b}{10}{Impact of TEE-based attacks on sPoT~\cite {panigrahyAnalysisEvaluationProximitybased2022} and COoL selections}{figure.caption.11}{}}
-\newlabel{sub@fig:byz-sameDC-cs-rw-spot@cref}{{[subfigure][2][7]7b}{[1][9][]10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Information front-running case-study wrt. competitors in a \emph  {timing-attacked} TEE environment | Shares of discovered NBS-assets (averages with standard deviation), aggregated from 100 runs, in a malicious environment in the same datacenter setup with 8 providers, for different system configurations. \emph  {The closer the values are to 50\%, the better, as it indicates lower malicious information front-running advantage.} }}{10}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:byz-sameDC}{{7}{10}{Information front-running case-study wrt. competitors in a \emph {timing-attacked} TEE environment | Shares of discovered NBS-assets (averages with standard deviation), aggregated from 100 runs, in a malicious environment in the same datacenter setup with 8 providers, for different system configurations. \emph {The closer the values are to 50\%, the better, as it indicates lower malicious information front-running advantage.}}{figure.caption.11}{}}
-\newlabel{fig:byz-sameDC@cref}{{[figure][7][]7}{[1][9][]10}}
-\newlabel{fig:byz-sameDC-cs-8sp}{{8a}{10}{Impact of (non-)TEE-based attacks on COoL provider selection with 8 total providers}{figure.caption.12}{}}
-\newlabel{fig:byz-sameDC-cs-8sp@cref}{{[subfigure][1][8]8a}{[1][9][]10}}
-\newlabel{sub@fig:byz-sameDC-cs-8sp}{{a}{10}{Impact of (non-)TEE-based attacks on COoL provider selection with 8 total providers}{figure.caption.12}{}}
-\newlabel{sub@fig:byz-sameDC-cs-8sp@cref}{{[subfigure][1][8]8a}{[1][9][]10}}
-\newlabel{fig:byz-sameDC-cs-12sp}{{8b}{10}{Impact of (non-)TEE-based attacks on COoL provider selection scaled out with 4 additional honest providers}{figure.caption.12}{}}
-\newlabel{fig:byz-sameDC-cs-12sp@cref}{{[subfigure][2][8]8b}{[1][9][]10}}
-\newlabel{sub@fig:byz-sameDC-cs-12sp}{{b}{10}{Impact of (non-)TEE-based attacks on COoL provider selection scaled out with 4 additional honest providers}{figure.caption.12}{}}
-\newlabel{sub@fig:byz-sameDC-cs-12sp@cref}{{[subfigure][2][8]8b}{[1][9][]10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Information front-running case-study wrt. attack scenarios in (non-)TEE environments | Shares of discovered NBS-assets (averages with standard deviation), aggregated from 100 runs, in a malicious environment in the same datacenter setup, with either 8 or 12 providers (resp. \Cref  {fig:byz-sameDC-cs-8sp,fig:byz-sameDC-cs-12sp}) under different attack scenarios. \emph  {The closer the values are to 50\%, the better, as it indicates lower malicious information front-running advantage.} }}{10}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:byz-sameDC-cs-att}{{8}{10}{Information front-running case-study wrt. attack scenarios in (non-)TEE environments | Shares of discovered NBS-assets (averages with standard deviation), aggregated from 100 runs, in a malicious environment in the same datacenter setup, with either 8 or 12 providers (resp. \Cref {fig:byz-sameDC-cs-8sp,fig:byz-sameDC-cs-12sp}) under different attack scenarios. \emph {The closer the values are to 50\%, the better, as it indicates lower malicious information front-running advantage.}}{figure.caption.12}{}}
-\newlabel{fig:byz-sameDC-cs-att@cref}{{[figure][8][]8}{[1][9][]10}}
-\citation{zichichi_towards_2021}
-\citation{keizerDittoDecentralisedSimilarity2023}
-\citation{zichichi_towards_2021}
-\citation{Graph}
-\citation{liBringingDecentralizedSearch2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \emph  {The staler the response, the less likely NBS-assets will be discovered from it} | Number of NBS-assets discovered with a latency from service start to response reception of $\Delta $ milliseconds, depending on the behavior (honest or malicious) of the sending consumer and handling provider, in a TEE-protected environment, with a total system load $\rho =25\%$, subject to \emph  {timing attacks} ($p_{M}=\frac  {4}{8}$ providers are malicious), on the PlanetLab network topology.}}{11}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:nbsa-wt}{{9}{11}{\emph {The staler the response, the less likely NBS-assets will be discovered from it} | Number of NBS-assets discovered with a latency from service start to response reception of $\Delta $ milliseconds, depending on the behavior (honest or malicious) of the sending consumer and handling provider, in a TEE-protected environment, with a total system load $\rho =25\%$, subject to \emph {timing attacks} ($p_{M}=\frac {4}{8}$ providers are malicious), on the PlanetLab network topology}{figure.caption.13}{}}
-\newlabel{fig:nbsa-wt@cref}{{[figure][9][]9}{[1][11][]11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.4}Case-studies summary}{11}{subsubsection.6.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Adversarial PlanetLab setup}{11}{subsection.6.3}\protected@file@percent }
-\newlabel{ssec:res-malPL}{{6.3}{11}{Adversarial PlanetLab setup}{subsection.6.3}{}}
-\newlabel{ssec:res-malPL@cref}{{[subsection][3][6]6.3}{[1][11][]11}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Related work}{11}{section.7}\protected@file@percent }
-\newlabel{sec:related_work}{{7}{11}{Related work}{section.7}{}}
-\newlabel{sec:related_work@cref}{{[section][7][]7}{[1][11][]11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Decentralized search mechanisms}{11}{subsection.7.1}\protected@file@percent }
-\citation{torresFrontrunnerJonesRaiders2021}
-\citation{bentovTesseractRealTimeCryptocurrency2019,kelkarThemisFastStrong2023,stathakopoulouAddingFairnessOrder2021}
-\citation{cachinQuickOrderFairness2022}
-\citation{kelkarThemisFastStrong2023}
-\citation{stathakopoulouAddingFairnessOrder2021}
-\citation{TorProjectPrivacy}
-\citation{liBringingDecentralizedSearch2021,keizerDittoDecentralisedSimilarity2023,zichichi_towards_2021}
-\citation{muhlbergerFoundationalOraclePatterns2020}
-\citation{etherscan.ioEthereumAverageBlock}
-\citation{caldarelliOverviewBlockchainOracle2022,al-breikiTrustworthyBlockchainOracles2020,heissOraclesTrustworthyData2019}
-\citation{liuGowiththewinnerPerformanceBased2016}
-\citation{panigrahyAnalysisEvaluationProximitybased2022}
-\citation{mitzenmacherPowerTwoChoices2001}
-\citation{wendellDONARDecentralizedServer2010}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Transaction-front-running-resilient protocols}{12}{subsection.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Oracle systems}{12}{subsection.7.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Decentralized QoS-based provider selection}{12}{subsection.7.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{12}{section.8}\protected@file@percent }
-\newlabel{sec:conclusion}{{8}{12}{Conclusion}{section.8}{}}
-\newlabel{sec:conclusion@cref}{{[section][8][]8}{[1][12][]12}}
+\citation{binmore_game_2007}
 \bibstyle{ACM-Reference-Format}
 \bibdata{imports/bibliography}
+\bibcite{binmore_game_2007}{{1}{2007}{{Binmore}}{{}}}
 \newlabel{tocindent-1}{0pt}
 \newlabel{tocindent0}{0pt}
 \newlabel{tocindent1}{4.65pt}
 \newlabel{tocindent2}{11.49998pt}
 \newlabel{tocindent3}{22.8pt}
-\@writefile{toc}{\contentsline {section}{References}{13}{section*.15}\protected@file@percent }
-\newlabel{TotPages}{{13}{13}{}{page.13}{}}
-\gdef \@abspage@last{13}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Model \& problem statement}{1}{section.2}\protected@file@percent }
+\newlabel{sec:problem_statement}{{2}{1}{Model \& problem statement}{section.2}{}}
+\newlabel{sec:problem_statement@cref}{{[section][2][]2}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Blind Slashing\xspace   | Overview}{1}{section.3}\protected@file@percent }
+\newlabel{sec:overview}{{3}{1}{\sysname \space | Overview}{section.3}{}}
+\newlabel{sec:overview@cref}{{[section][3][]3}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Blind Slashing\xspace   | Detailed description}{1}{section.4}\protected@file@percent }
+\newlabel{sec:solution}{{4}{1}{\sysname \space | Detailed description}{section.4}{}}
+\newlabel{sec:solution@cref}{{[section][4][]4}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimental protocol}{1}{section.5}\protected@file@percent }
+\newlabel{sec:experimental_protocol}{{5}{1}{Experimental protocol}{section.5}{}}
+\newlabel{sec:experimental_protocol@cref}{{[section][5][]5}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{1}{section.6}\protected@file@percent }
+\newlabel{sec:results}{{6}{1}{Results}{section.6}{}}
+\newlabel{sec:results@cref}{{[section][6][]6}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Related work}{1}{section.7}\protected@file@percent }
+\newlabel{sec:related_work}{{7}{1}{Related work}{section.7}{}}
+\newlabel{sec:related_work@cref}{{[section][7][]7}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{1}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{1}{Conclusion}{section.8}{}}
+\newlabel{sec:conclusion@cref}{{[section][8][]8}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{References}{1}{section*.5}\protected@file@percent }
+\newlabel{TotPages}{{1}{1}{}{page.1}{}}
+\gdef \@abspage@last{1}
