@@ -1,68 +1,95 @@
-# Decentralized Computing Marketplace Incentivization - Internship Project
+# Incentivization in Decentralized Cloud Computing Systems with Limited Execution Information
+**Internship Project 2024**
 
-## Overview
+## Internship subject
+This project explores incentivization mechanisms within decentralized cloud computing systems, focusing on the decentralized marketplace developed by iExec. iExec has pioneered a marketplace allowing users to monetize computing resources, including datasets, applications, and server power, while ensuring that no single entity (including iExec itself) can control or censor marketplace operations. Blockchain technology underpins the marketplace, ensuring transparency and traceability for all transactions and their metadata. Trusted Execution Environments (TEEs) further ensure both the integrity of the code execution and the confidentiality of the data, while economic mechanisms incentivize contributors to ensure correct results.
 
-This repository contains the work done during my internship on incentivization mechanisms in a decentralized computing marketplace, specifically focusing on the iExec platform. iExec has developed and deployed the first decentralized marketplace for computing resources, enabling anyone to monetize computing power (servers, virtual machines, etc.), decentralized applications (DApps), and data sets.
+However, the system is not fully immune to malicious actors. Contributors of applications, datasets, and customers alike may introduce low-quality or faulty resources (e.g., buggy applications or poorly formatted datasets) or request tasks with a high likelihood of failure, without facing penalties. Currently the marketplace has no way to incentivize each individual actor to behave in a reliable way and check that they do so. Therefore the marketplace is exposed to potential reliability issues.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Background](#background)
-- [Objectives](#objectives)
-- [Project Structure](#project-structure)
-- [References](#references)
+The project’s objective is to analyze the iExec decentralized marketplace, identify system shortcomings that could threaten its proper functioning, and propose solutions. These solutions, which could be cryptographic, economic, or reputation-based, will aim to mitigate the highlighted risks and ensure the system remains robust.
 
-## Introduction
+## Internship summary
 
-In contrast to classical cloud computing platforms such as Amazon or Google, the iExec marketplace operates without the need for a trusted third party and cannot be controlled or censored by any entity, including iExec itself. In the iExec marketplace, applications, data, and resources are published as orders, which include crucial information such as pricing details, governance rules, and other relevant specifications. The matching between these orders is done on-chain and generates a deal, which triggers the execution of the corresponding task off-chain. The execution is carried out by a worker selected from the iExec network within a Trusted Execution Environment (TEE) to ensure privacy and integrity. The result and an attestation confirming the secure execution within a TEE are then provided to the client.
+**June 2024:** During the initial weeks of my internship, I worked on understanding the iExec decentralized marketplace. My primary focus was on how the protocol operates, particularly its use of blockchain technology for transparency and Trusted Execution Environments (TEEs) for secure task execution. This foundational phase also involved a deep dive into iExec’s economic mechanisms and protocols. With this knowledge, I began defining the key objectives of my internship.
 
-## Background
+**Late June 2024:** I shifted my attention to testing the iExec platform to get a better understanding of the workings of it. This hands-on investigation involved following the iExec introduction course which teach how to develop, upload and run applications on their platform. I also started developing an early Python simulation to model a slashing mechanism, which aimed to explore how economic penalties could be used to deter bad actors from submitting faulty resources or requesting infeasible tasks.
 
-PoCo (Proof-of-Contribution) is a protocol created by iExec that acts as the decentralized trust party in the marketplace. Its duty is to ensure that a worker who contributes correctly to a computing task is rewarded, while ensuring that a requester is not charged unless a consensus is achieved on the task result. This mechanism involves locking the requester's funds for the duration of the consensus, and unlocking them based on the outcome. PoCo also uses a staking mechanism to prevent bad behavior and encourage good contributions from workers.
+**July 2024:** By mid-July, I began constructing a game-theoretic model of the decentralized marketplace. This model allowed me to analyze the interactions between requesters, asset providers, application providers and workers, and to assess the incentives and potential for misbehavior within the system. I extended this model to include slashing mechanisms, evaluating how various penalty structures could influence behavior. Additionally, I explored Ruin Theory to understand the potential of a collective slashing mechanism on users wealth.
 
-## Objectives
+**August 2024:** In August, my research led me to develop the concept of "blind slashing," a mechanism designed to penalize bad actors while maintaining privacy. I synthesized this idea in a document and implemented a simulation of it in Python to assess its effectiveness.
 
-The primary goal of this project is to incentivize correct behavior in a decentralized computing marketplace. Specific objectives include:
-1. Assessing threats posed by actors in the decentralized computing marketplace.
-2. Studying the state-of-the-art on incentivization mechanisms (e.g., economic incentives, reputation) in this context.
-3. Proposing and evaluating mechanisms to mitigate identified threats.
+**September 2024:** In September, I shifted my work on a "blind reputation" simulation, focusing on how reputation scores could influence marketplace behavior and improve overall reliability. For that purpose I removed all notions of slashing and stake from the simulation and focused on prioritizing high reputations actors for task executions.
 
-## Project Structure
+## Repository Structure
+The project is organized chronologically by significant milestones, with each folder representing a key phase of development. Below is a summary of the folders and the contents within.
 
-The repository is structured in the following chronological order:
+### 1. **2024-06-01_Beginning-of-the-Internship**
+   - Initial setup and literature review on decentralized computing platforms and incentivization mechanisms.
+   - Understanding the basic architecture of decentralized networks, the role of participants, and slashing mechanisms.
 
-### 2024-06-01: Beginning of the Internship
-I read articles and iExec documentation to get a better idea of the problem, the possible solutions, and the related fields of research.
+### 2. **2024-06-10_Finding-a-Focus**
+   - Narrowed the focus towards incentivization mechanisms, particularly around slashing.
+   - Draft of the primary research question and methodology for exploring game theory in decentralized systems.
 
-### 2024-06-10: Finding a Focus
-I explored possible solutions and leads to aim and specify my research. We decided to explore a system where everyone is slashed if a task fails. The purpose is to see if this is feasible and if it would incentivize people to behave correctly.
+### 3. **2024-06-17_Testing-the-iExec-Platform**
+   - Experimentation with the iExec decentralized computing platform.
+   - Setup of a small-scale testbed to simulate a marketplace, including task providers, workers, and consensus mechanisms.
 
-### 2024-06-17: Testing the iExec Platform
-This week was spent following the iExec documentation and attempting to write, compile, and push a basic dApp on the iExec marketplace to better understand the system and prepare for creating Proof of Concepts (PoCs) on the platform.
+### 4. **2024-06-24_First-Python-Slashing-Simulation**
+   - Development of a basic Python model to simulate a simple slashing mechanism.
+   - Initial experiments to understand slashing in action, focusing on various parameters like slashing rates and detection probabilities.
 
-### 2024-06-24: First Python Slashing Simulation
-During this week, I attempted to model the marketplace as an object-oriented system and ran numerous tasks to see whether slashing everyone could theoretically deter malicious actors. The simulation is not perfect and is still performed in a static system.
+### 5. **2024-07-01_Game-Theoretic-Model-of-the-System**
+   - First iteration of the game-theoretic model describing interactions between marketplace participants.
+   - Analysis of how slashing and incentives influence participant behavior under different conditions.
 
-### 2024-07-01: Game Theoretic Model of the System
-After meeting with Matthieu, we decided to focus first on a game-theoretic model of the system.
+### 6. **2024-07-15_Game-Theoretic-Model-of-Slashing**
+   - Extension of the game-theoretic model, focusing on slashing mechanisms and their strategic implications.
+   - Incorporation of cooperative strategies, reputation effects, and penalties for misbehavior.
 
-### 2024-07-15: Game Theoretic Model of Slashing
-Explored further into the game-theoretic implications of slashing mechanisms within the decentralized marketplace, aiming to understand its impact on participant behavior and system resilience.  
+### 7. **2024-07-17_Ruin-Theory**
+   - Application of ruin theory to the slashing problem, with the aim of understanding long-term participant behavior.
+   - Insights into how cumulative penalties affect the sustainability of participants in the marketplace.
 
-Also explored the iExec blockchain (graphQL) to look at possible error analysis thanks to the informations logged on blockchain.  
+### 8. **2024-08-02_Blind-Slashing-Synthesis**
+   - Introduction of the concept of "blind slashing" as a more robust form of incentivization.
+   - Theoretical synthesis of blind slashing mechanisms with potential real-world applications.
 
-### 2024-07-17: Ruin Theory
-Investigated the application of ruin theory to assess how fast actors can get ruined within the decentralized computing marketplace using a slashing strategie.
+### 9. **2024-08-22_Blind-Slashing-Simulation**
+   - Simulated the blind slashing mechanism using Python.
+   - Analysis of the performance, fairness, and robustness of blind slashing compared to traditional approaches.
 
-### 2024-08-02: Blind Slashing Synthesis
-A comprehensive synthesis of all work completed to date, aimed at enhancing clarity and readability.
+### 10. **2024-09-09_Blind-Reputation-Simulation**
+   - Development and simulation of a hybrid slashing and reputation-based mechanism.
+   - Simulated scenarios where reputation can serve as an alternative or complement to slashing in incentivizing honest behavior.
 
-### Material
-A collection of all relevant external resources provided to support the completion of the mission.  
+### 11. **Material**
+   - A collection of papers, references, and resources consulted during the project.
+   - Additional notes, diagrams, and code snippets used across different phases.
 
-## TODO
+Here is a "## Reference" section for your README based on the provided sources:
 
-Explore Token Currated Registeries with a possibility to have list of trusted and reliable applications / datasets... or even graph / pairs of assets that work well togethers.  
+## Reference
 
-## References
+**Game Theory:**
+- Binmore, K. G. (2007). *Game theory: A very short introduction*. Oxford University Press.
 
-1. iExec Documentation: [https://protocol.docs.iex.ec/]
+**Reputation Systems:**
+- Hasan, O., Brunie, L., & Bertino, E. (2022). Privacy-preserving reputation systems based on blockchain and other cryptographic building blocks: A survey. *ACM Computing Surveys*, 54(3), 1-36.
+- Dellarocas, C. (n.d.). Analyzing the economic efficiency of eBay-like online reputation reporting mechanisms. *Journal of Economics & Management Strategy*.
+
+**Decentralized Systems:**
+- iExec Technical Documentation. (n.d.). iExec. Retrieved from [iExec Documentation](https://docs.iex.ec).
+- Serban, C., Chen, Y., Zhang, W., & Minsky, N. (2008). The concept of decentralized and secure electronic marketplace. *Proceedings of the 2008 International Conference on E-Commerce and E-Services*.
+- Ramachandran, G. S., Radhakrishnan, R., & Krishnamachari, B. (2018). Towards a decentralized data marketplace for smart cities. *IEEE Transactions on Network and Service Management*, 15(4), 1715-1727.
+- Kaur, J., & Visveswaraiah, B. (2021). A brief survey of token curated registries. *Proceedings of the International Conference on Smart Systems and Inventive Technology (ICSSIT)*.
+- Aral, A., Uriarte, R. B., Simonet-Boulogne, A., & Brandic, I. (2020). Reliability management for blockchain-based decentralized multi-cloud. *Future Generation Computer Systems*, 107, 175-189.
+
+**Incentives and Punishment:**
+- Goeschl, T., & Jarke, J. (2013). Non-strategic punishment when monitoring is costly: Experimental evidence on differences between second and third party behavior. *Journal of Economic Behavior & Organization*, 86, 1-14.
+- Fatas, E., Morales, A. J., & Ubeda, P. (2010). Blind justice: An experimental analysis of random punishment in team production. *Journal of Economic Psychology*, 31(2), 265-274.
+- Duell, D., Mengel, F., Mohlin, E., & Weidenholzer, S. (2024). Cooperation through collective punishment and participation. *American Economic Journal: Microeconomics*, 16(2), 1-27.
+- Gao, L., Wang, Z., Pansini, R., Li, Y.-T., & Wang, R.-W. (2015). Collective punishment is more effective than collective reward for promoting cooperation. *Nature Communications*, 6, 7239.
+- Huang, J., Lei, K., Du, M., Zhao, H., Liu, H., Liu, J., & Qi, Z. (2019). Survey on blockchain incentive mechanism. *IEEE Access*, 7, 88770-88784.
+- Maddikunta, P. K. R., Pham, Q.-V., Nguyen, D. C., Huynh-The, T., Aouedi, O., Yenduri, G., Bhattacharya, S., & Gadekallu, T. R. (2022). Incentive techniques for the Internet of Things: A survey. *IEEE Internet of Things Journal*, 9(2), 1325-1342.
+- Li, Z., & Shen, H. (2012). Game-theoretic analysis of cooperation incentive strategies in mobile ad hoc networks. *IEEE Transactions on Wireless Communications*, 11(2), 680-688.
