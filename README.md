@@ -32,8 +32,7 @@ The project is organized chronologically by significant milestones, with each fo
    - Draft of the primary research question and methodology for exploring game theory in decentralized systems.
 
 ### 3. **2024-06-17_Testing-the-iExec-Platform**
-   - Experimentation with the iExec decentralized computing platform.
-   - Setup of a small-scale testbed to simulate a marketplace, including task providers, workers, and consensus mechanisms.
+   - Experimentation with the iExec decentralized computing platform (following the iExec "Getting started" tutorial).
 
 ### 4. **2024-06-24_First-Python-Slashing-Simulation**
    - Development of a basic Python model to simulate a simple slashing mechanism.
@@ -41,7 +40,6 @@ The project is organized chronologically by significant milestones, with each fo
 
 ### 5. **2024-07-01_Game-Theoretic-Model-of-the-System**
    - First iteration of the game-theoretic model describing interactions between marketplace participants.
-   - Analysis of how slashing and incentives influence participant behavior under different conditions.
 
 ### 6. **2024-07-15_Game-Theoretic-Model-of-Slashing**
    - Extension of the game-theoretic model, focusing on slashing mechanisms and their strategic implications.
@@ -49,23 +47,22 @@ The project is organized chronologically by significant milestones, with each fo
 
 ### 7. **2024-07-17_Ruin-Theory**
    - Application of ruin theory to the slashing problem, with the aim of understanding long-term participant behavior.
-   - Insights into how cumulative penalties affect the sustainability of participants in the marketplace.
+   - Insights into how cumulative penalties and rewards affect the sustainability of participants in the marketplace.
 
 ### 8. **2024-08-02_Blind-Slashing-Synthesis**
-   - Introduction of the concept of "blind slashing" as a more robust form of incentivization.
-   - Theoretical synthesis of blind slashing mechanisms with potential real-world applications.
+   - Introduction of the concept of "blind slashing" as a form of incentivization.
+   - Theoretical synthesis of blind slashing mechanisms.
 
 ### 9. **2024-08-22_Blind-Slashing-Simulation**
    - Simulated the blind slashing mechanism using Python.
-   - Analysis of the performance, fairness, and robustness of blind slashing compared to traditional approaches.
+   - Analysis of the performance, fairness, and robustness of blind slashing.
 
 ### 10. **2024-09-09_Blind-Reputation-Simulation**
-   - Development and simulation of a hybrid slashing and reputation-based mechanism.
-   - Simulated scenarios where reputation can serve as an alternative or complement to slashing in incentivizing honest behavior.
+   - Development and simulation of a reputation mechanism based on collective punishment and reward.
+   - Simulated scenarios where reputation can serve as an alternative to slashing in incentivizing honest behavior.
 
 ### 11. **Material**
-   - A collection of papers, references, and resources consulted during the project.
-   - Additional notes, diagrams, and code snippets used across different phases.
+   - A collection of resources consulted during the project.
 
 ## Reference
 
