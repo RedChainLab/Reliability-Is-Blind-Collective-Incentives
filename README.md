@@ -67,8 +67,6 @@ The project is organized chronologically by significant milestones, with each fo
    - A collection of papers, references, and resources consulted during the project.
    - Additional notes, diagrams, and code snippets used across different phases.
 
-Here is a "## Reference" section for your README based on the provided sources:
-
 ## Reference
 
 **Game Theory:**
