@@ -38,26 +38,26 @@ The project is organized chronologically by significant milestones, with each fo
    - Development of a basic Python model to simulate a simple slashing mechanism.
    - Initial experiments to understand slashing in action, focusing on various parameters like slashing rates and detection probabilities.
 
-### 5. **2024-07-01_Game-Theoretic-Model-of-the-System**
+### 5. **2024-07-01_Game-Theoretic-Model-of-Current-System**
    - First iteration of the game-theoretic model describing interactions between marketplace participants.
 
 ### 6. **2024-07-15_Game-Theoretic-Model-of-Slashing**
    - Extension of the game-theoretic model, focusing on slashing mechanisms and their strategic implications.
    - Incorporation of cooperative strategies, reputation effects, and penalties for misbehavior.
 
-### 7. **2024-07-17_Ruin-Theory**
+### 7. **2024-07-17_Ruin-Theoric-Model-of-Slashing**
    - Application of ruin theory to the slashing problem, with the aim of understanding long-term participant behavior.
    - Insights into how cumulative penalties and rewards affect the sustainability of participants in the marketplace.
 
-### 8. **2024-08-02_Blind-Slashing-Synthesis**
+### 8. **2024-08-02_Collective-Incentive-Slashing-Synthesis**
    - Introduction of the concept of "blind slashing" as a form of incentivization.
    - Theoretical synthesis of blind slashing mechanisms.
 
-### 9. **2024-08-22_Blind-Slashing-Simulation**
+### 9. **2024-08-22_Collective-Incentive-Slashing-Simulation**
    - Simulated the blind slashing mechanism using Python.
    - Analysis of the performance, fairness, and robustness of blind slashing.
 
-### 10. **2024-09-09_Blind-Reputation-Simulation**
+### 10. **2024-09-09_Collective-Incentive-Reputation-Simulation**
    - Development and simulation of a reputation mechanism based on collective punishment and reward.
    - Simulated scenarios where reputation can serve as an alternative to slashing in incentivizing honest behavior.
 
