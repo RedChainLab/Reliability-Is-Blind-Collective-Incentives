@@ -7,6 +7,3 @@ Information Asymmetry: Each participant in the system has access to only a parti
 Interdependence of Components: In decentralized systems, the performance and success of the overall system depend on the coordinated efforts of multiple independent actors. Each actor's behavior and decisions can impact others, creating a complex web of dependencies. When a failure occurs, it is often the result of a breakdown in this coordination, rather than the fault of a single actor. However, without clear lines of responsibility, it becomes challenging to determine how to address and correct such failures in a way that is perceived as fair by all involved.
 
 These issues create a fundamental problem in ensuring reliability and fairness in decentralized systems, where traditional methods of oversight, accountability, and enforcement are not feasible. The challenge lies in designing mechanisms that can effectively manage this uncertainty, align incentives, and promote cooperative behavior, even when individual actions cannot be fully observed or controlled.
-
-# Note réunion
-* Regarder si il existe d'autres domaines d'application qui présentent le même problème, voir si il n'est pas possible de trouver des datasets à exploiter.
