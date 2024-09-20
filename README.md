@@ -1,12 +1,12 @@
 # Incentivization in Decentralized Cloud Computing Systems with Limited Execution Information
-**Internship Project 2024**
+**Henry MONT Internship 2024**
 
 ## Internship subject
-This project explores incentivization mechanisms within decentralized cloud computing systems, focusing on the decentralized marketplace developed by iExec. iExec has pioneered a marketplace allowing users to monetize computing resources, including datasets, applications, and server power, while ensuring that no single entity (including iExec itself) can control or censor marketplace operations. Blockchain technology underpins the marketplace, ensuring transparency and traceability for all transactions and their metadata. Trusted Execution Environments (TEEs) further ensure both the integrity of the code execution and the confidentiality of the data, while economic mechanisms incentivize contributors to ensure correct results.
+This internship explores incentivization mechanisms within decentralized cloud computing systems, focusing on the decentralized marketplace developed by iExec. iExec has pioneered a marketplace allowing users to monetize computing resources, including datasets, applications, and server power, while ensuring that no single entity (including iExec itself) can control or censor marketplace operations. Blockchain technology underpins the marketplace, ensuring transparency and traceability for all transactions and their metadata. Trusted Execution Environments (TEEs) further ensure both the integrity of the code execution and the confidentiality of the data, while economic mechanisms incentivize contributors to ensure correct results.
 
 However, the system is not fully immune to malicious actors. Contributors of applications, datasets, and customers alike may introduce low-quality or faulty resources (e.g., buggy applications or poorly formatted datasets) or request tasks with a high likelihood of failure, without facing penalties. Currently the marketplace has no way to incentivize each individual actor to behave in a reliable way and check that they do so. Therefore the marketplace is exposed to potential reliability issues.
 
-The project’s objective is to analyze the iExec decentralized marketplace, identify system shortcomings that could threaten its proper functioning, and propose solutions. These solutions, which could be cryptographic, economic, or reputation-based, will aim to mitigate the highlighted risks and ensure the system remains robust.
+The internship’s objective is to analyze the iExec decentralized marketplace, identify system shortcomings that could threaten its proper functioning, and propose solutions. These solutions, which could be cryptographic, economic, or reputation-based, will aim to mitigate the highlighted risks and ensure the system remains robust.
 
 ## Internship summary
 
@@ -21,7 +21,7 @@ The project’s objective is to analyze the iExec decentralized marketplace, ide
 **September 2024:** In September, I shifted my work on a "blind reputation" simulation, focusing on how reputation scores could influence marketplace behavior and improve overall reliability. For that purpose I removed all notions of slashing and stake from the simulation and focused on prioritizing high reputations actors for task executions.
 
 ## Repository Structure
-The project is organized chronologically by significant milestones, with each folder representing a key phase of development. Below is a summary of the folders and the contents within.
+The repository is organized chronologically by significant milestones, with each folder representing a key phase of development. Below is a summary of the folders and the contents within.
 
 ### **2024-06-01_Internship-Onboarding**
    - Initial setup and literature review on decentralized computing platforms and incentivization mechanisms.
@@ -62,7 +62,7 @@ The project is organized chronologically by significant milestones, with each fo
    - Simulated scenarios where reputation can serve as an alternative to slashing in incentivizing honest behavior.
 
 ### **Material**
-   - A collection of resources consulted during the project.
+   - A collection of resources consulted during the internship.
 
 ## Reference
 
