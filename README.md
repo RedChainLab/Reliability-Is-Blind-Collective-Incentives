@@ -23,45 +23,45 @@ The project’s objective is to analyze the iExec decentralized marketplace, ide
 ## Repository Structure
 The project is organized chronologically by significant milestones, with each folder representing a key phase of development. Below is a summary of the folders and the contents within.
 
-### 1. **2024-06-01_Beginning-of-the-Internship**
+### **2024-06-01_Internship-Onboarding**
    - Initial setup and literature review on decentralized computing platforms and incentivization mechanisms.
    - Understanding the basic architecture of decentralized networks, the role of participants, and slashing mechanisms.
 
-### 2. **2024-06-10_Finding-a-Focus**
+### **2024-06-10_Finding-Research-Focus**
    - Narrowed the focus towards incentivization mechanisms, particularly around slashing.
    - Draft of the primary research question and methodology for exploring game theory in decentralized systems.
 
-### 3. **2024-06-17_Testing-the-iExec-Platform**
+### **2024-06-17_Getting-Familiar-with-iExec**
    - Experimentation with the iExec decentralized computing platform (following the iExec "Getting started" tutorial).
 
-### 4. **2024-06-24_First-Python-Slashing-Simulation**
+### **2024-06-24_First-Python-Collective-Slashing-Simulation**
    - Development of a basic Python model to simulate a simple slashing mechanism.
    - Initial experiments to understand slashing in action, focusing on various parameters like slashing rates and detection probabilities.
 
-### 5. **2024-07-01_Game-Theoretic-Model-of-Current-System**
+### **2024-07-01_Game-Theoretic-Model-of-Current-System**
    - First iteration of the game-theoretic model describing interactions between marketplace participants.
 
-### 6. **2024-07-15_Game-Theoretic-Model-of-Slashing**
+### **2024-07-15_Game-Theoretic-Model-of-Collective-Slashing**
    - Extension of the game-theoretic model, focusing on slashing mechanisms and their strategic implications.
    - Incorporation of cooperative strategies, reputation effects, and penalties for misbehavior.
 
-### 7. **2024-07-17_Ruin-Theoric-Model-of-Slashing**
+### **2024-07-17_Ruin-Theoric-Model-of-Collective-Slashing**
    - Application of ruin theory to the slashing problem, with the aim of understanding long-term participant behavior.
    - Insights into how cumulative penalties and rewards affect the sustainability of participants in the marketplace.
 
-### 8. **2024-08-02_Collective-Incentive-Slashing-Synthesis**
+### **2024-08-02_Collective-Slashing-Synthesis**
    - Introduction of the concept of "blind slashing" as a form of incentivization.
    - Theoretical synthesis of blind slashing mechanisms.
 
-### 9. **2024-08-22_Collective-Incentive-Slashing-Simulation**
+### **2024-08-22_Collective-Slashing-Simulation**
    - Simulated the blind slashing mechanism using Python.
    - Analysis of the performance, fairness, and robustness of blind slashing.
 
-### 10. **2024-09-09_Collective-Incentive-Reputation-Simulation**
+### **2024-09-09_Collective-Reputation-Simulation**
    - Development and simulation of a reputation mechanism based on collective punishment and reward.
    - Simulated scenarios where reputation can serve as an alternative to slashing in incentivizing honest behavior.
 
-### 11. **Material**
+### **Material**
    - A collection of resources consulted during the project.
 
 ## Reference
