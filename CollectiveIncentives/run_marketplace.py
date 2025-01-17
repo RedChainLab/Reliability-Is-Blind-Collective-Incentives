@@ -3,35 +3,13 @@ import numpy as np
 from scipy.stats import powerlaw
 import matplotlib.pyplot as plt
 from concurrent.futures import ProcessPoolExecutor as pool
-import sys
 from functools import partial
 from datetime import datetime
 import matplotlib.ticker as mtick
 
 from marketplace import *
-
-params = {'text.usetex' : True,
-          'font.size' : 10,
-            'font.family' : 'serif',
-            'font.serif' : 'Computer Modern Roman',
-          }
-plt.rcParams.update(params) 
-
-N_JOBS = int(sys.argv[1]) if len(sys.argv) > 1 else 1
-
-FIG_DIR="out/fig"
-
-# Display
-X_MAX = 0.50
-Y_MAX = (N_ACTORS_INITIAL + N_TASKS//NEW_ACTOR_INTERVAL) // 10
-
-# Function to pad a list with zeros up to a target length
-def pad_list_with_zeros(lst, target_length):
-    return lst + [0] * (target_length - len(lst))
-
-# Function extend list to desired length by repeatinig the last element
-def extend_list(lst, target_length):
-    return lst + [lst[-1]] * (target_length - len(lst))
+from matplotlib.legend_handler import HandlerTuple
+from matplotlib import patches
 
 # Function to run a single simulation
 def run_simulation(faulty_sets, p_fail_distribution):
@@ -60,6 +38,7 @@ def run_simulation(faulty_sets, p_fail_distribution):
     false_positive = 0
     false_negative = 0
 
+    task_failed_list = []
     removed_assets = []
     system_failure_rates = []
     actor_counts = []
@@ -98,7 +77,7 @@ def run_simulation(faulty_sets, p_fail_distribution):
                 actor.stake += REWARD_AMOUNT
                 actor.nb_tasks += 1
                 actor.reward += REWARD_AMOUNT
-        
+        task_failed_list.append(task_failed)
         # Remove assets and corresponding faulty sets with zero or negative stake
         to_remove = [actor for actor in assets if actor.stake <= 0]
         removed_assets.extend(to_remove)
@@ -143,6 +122,7 @@ def run_simulation(faulty_sets, p_fail_distribution):
         'average_failure_rates': average_failure_rates,
         'actor_counts': actor_counts,
         'successful_tasks': successful_tasks,
+        'task_failed_list': task_failed_list,
         'failed_tasks': failed_tasks,
         'final_number_of_assets': len(assets),
         'precision': precision,
@@ -153,10 +133,8 @@ def run_simulation(faulty_sets, p_fail_distribution):
         'all_assets': all_assets
     }
 
-if __name__ == '__main__':
+def run_marketplace(gen_plots=True):
   current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
-
-  alpha=0.05
 
   # Calculate the failure rate target
   failure_rate_target = REWARD_AMOUNT / (REWARD_AMOUNT + SLASH_AMOUNT)
@@ -165,7 +143,7 @@ if __name__ == '__main__':
   print(f"Individual failure rate target: {individual_failure_rate_target}")
   print(f"System failure rate target: {failure_rate_target}")
 
-  p_fail_distribution = powerlaw.rvs(alpha, size=1000000)
+  p_fail_distribution = powerlaw.rvs(ALPHA, size=N_FAIL_SAMPLES)
   mean_fail_rate = np.mean(p_fail_distribution)
 
   print(f"Mean failure rate: {mean_fail_rate}")
@@ -176,6 +154,7 @@ if __name__ == '__main__':
       'average_failure_rates': [],
       'actor_counts': [],
       'final_successful_tasks': [],
+      'task_failed_list': [],
       'final_failed_tasks': [],
       'final_number_of_assets': [],
       'precisions': [],
@@ -190,12 +169,13 @@ if __name__ == '__main__':
   # Run Monte Carlo simulations
   with pool(N_JOBS) as p:
       results = list(p.map(partial(run_simulation, p_fail_distribution=p_fail_distribution), faulty_sets))
-  # print(results)
+  print()
   for result in results:
       monte_carlo_results['system_failure_rates'].append(result['system_failure_rates'])
       monte_carlo_results['average_failure_rates'].append(result['average_failure_rates'])
       monte_carlo_results['actor_counts'].append(result['actor_counts'])
       monte_carlo_results['final_successful_tasks'].append(result['successful_tasks'])
+      monte_carlo_results['task_failed_list'].append(result['task_failed_list'])
       monte_carlo_results['final_failed_tasks'].append(result['failed_tasks'])
       monte_carlo_results['final_number_of_assets'].append(result['final_number_of_assets'])
       monte_carlo_results['precisions'].append(result['precision'])
@@ -218,11 +198,14 @@ if __name__ == '__main__':
   padded_system_failure_rates = [extend_list(run, N_TASKS) for run in monte_carlo_results['system_failure_rates']]
   padded_average_failure_rates = [extend_list(run, N_TASKS) for run in monte_carlo_results['average_failure_rates']]
   padded_actor_counts = [extend_list(run, N_TASKS) for run in monte_carlo_results['actor_counts']]
+  padded_task_failed_list = [extend_list(run, N_TASKS) for run in monte_carlo_results['task_failed_list']]
 
   # Aggregate the results
   avg_system_failure_rates = np.mean(padded_system_failure_rates, axis=0)
   avg_average_failure_rates = np.mean(padded_average_failure_rates, axis=0)
   avg_actor_counts = np.mean(padded_actor_counts, axis=0)
+  window_avg_task_failed = [moving_average(avg_task_failed, n=WINDOW_SIZE) for avg_task_failed in padded_task_failed_list]
+  avg_window_avg_task_failed = np.mean(window_avg_task_failed, axis=0)
 
   avg_final_successful_tasks = np.mean(monte_carlo_results['final_successful_tasks'])
   avg_final_failed_tasks = np.mean(monte_carlo_results['final_failed_tasks'])
@@ -231,37 +214,81 @@ if __name__ == '__main__':
   avg_accuracy = np.mean(monte_carlo_results['accuracies'])
   avg_recall = np.mean(monte_carlo_results['recalls'])
 
-  fig, axes = plt.subplots(nrows=2, figsize=(4.5, 5), layout='constrained')
+  print(f"Average precision;recall: {avg_precision:.4f} {avg_recall:.4f}")
 
-  num_series = MONTE_CARLO_RUNS
-  x=np.arange(0, len(padded_system_failure_rates[0]))
-  Y=np.array(padded_system_failure_rates)
-  print(x.shape, Y.shape)
+  # Plot window average of task_failed_list
+  plt.figure(figsize=(4.5, 2))
+  plt.plot(range(len(avg_window_avg_task_failed)), avg_window_avg_task_failed, label='Window Average Task Failed')
+  plt.axhline(y=failure_rate_target, color='r', linestyle='--', label='$F_t^{\\mathit{target}}='+f'{failure_rate_target*100:.0f}\%$', linewidth=0.7)
+  plt.xlabel("Task number")
+  plt.ylabel("Window Average Task Failure Rate")
+  plt.legend()
+  plt.tight_layout()
+  plt.savefig(f"{FIG_DIR}/window_avg_task_failed-{current_time}.pdf", dpi=1200)
 
-  x= np.broadcast_to(x, (num_series, len(x))).ravel()
-  Y = Y.ravel()
-  print(x.shape, Y.shape)
-  # Plot (x, y) points in 2d histogram with log colorscale
-  # It is pretty evident that there is some kind of structure under the noise
-  # You can tune vmax to make signal more visible
-  cmap = plt.colormaps["plasma"]
-  cmap = cmap.with_extremes(bad=cmap(0))
-  h, xedges, yedges = np.histogram2d(x, Y, bins=[5000, 200])
-  pcm = axes[0].pcolormesh(xedges, yedges, h.T, cmap=cmap,
-                          norm="log", rasterized=True)
-  fig.colorbar(pcm, ax=axes[0], label="Number of  points", pad=0)
-  axes[0].set_title("2d histogram and log color scale")
+  # fig, ax = plt.subplots(figsize=(4.5, 2))
 
-  pcm = axes[1].pcolormesh(xedges, yedges, h.T, cmap=cmap, rasterized=True)
-  fig.colorbar(pcm, ax=axes[1], label="Number of points", pad=0)
-  axes[1].set_title("2d histogram and linear color scale")
-  plt.savefig(f"{FIG_DIR}/2dhistogram.png", dpi=300)
+  # num_series = MONTE_CARLO_RUNS
+  # x_sys=np.arange(0, len(padded_system_failure_rates[0]))
+  # Y_sys=np.array(padded_system_failure_rates)
+  # print(x_sys.shape, Y_sys.shape)
+
+  # x_sys= np.broadcast_to(x_sys, (num_series, len(x_sys))).ravel()
+  # Y_sys = Y_sys.ravel()
+  # print(x_sys.shape, Y_sys.shape)
+  # # Plot (x_sys, y) points in 2d histogram with log colorscale
+  # # It is pretty evident that there is some kind of structure under the noise
+  # # You can tune vmax to make signal more visible
+  # cmap = plt.colormaps["plasma"]
+  # cmap = cmap.with_extremes(bad=cmap(0))
+  # h, xedges, yedges = np.histogram2d(x_sys, Y_sys, bins=[500, 200])
+  # pcm = ax.pcolormesh(xedges, yedges, h.T, cmap=cmap,
+  #                         norm="log", 
+  #                         rasterized=True)
+  # fig.colorbar(pcm, ax=ax, label="Number of  points", pad=0)
+  # ax.axhline(y=failure_rate_target, color='w', linestyle='--', label=f'$F_t={failure_rate_target*100:.0f}\%$', linewidth=0.7)
+  # ax.legend()
+  # ax.set_xlabel("Task number")
+  # ax.set_ylabel("Task failure rate $F_t$")
+  # plt.savefig(f"{FIG_DIR}/2dhistogram.png", dpi=1200)
+
+  fig, ax = plt.subplots(figsize=(4.5, 2.5))
+
+  percentiles=[50, 25, 50, 75, 95]
+  percentiles_values = np.percentile(window_avg_task_failed, percentiles, axis=0)
+  ax.fill_between(range(N_TASKS), percentiles_values[0], percentiles_values[-1], color='b', alpha=0.2, label='5-95\%', edgecolor="none")
+  # ax.fill_between(range(N_TASKS), percentiles_values[1], percentiles_values[-2], color='b', alpha=0.4, label='25-75\%', edgecolor="none")
+  ax.plot(range(N_TASKS), percentiles_values[2], 'b-', label='COLL-Stake', linewidth=1)
+  ax.axhline(y=failure_rate_target, color='r', linestyle='--', label='$F_t^{\\mathit{target}}='+f'{failure_rate_target*100:.0f}\%$', linewidth=1)
+  ax.set_xlabel("Task number")
+  ax.set_ylabel("System failure rate $F_t$")
+  ax.set_yscale("log")
+  ax.set_ylim(0.001, 1)
+  # ax.set_yticks(np.arange(0, 0.61, 0.2))
+  # ax.set_yticks(np.arange(0, 0.61, 0.05),minor=True)
+  ax.grid(True, which="major")
+  ax.grid(True, which="minor", linestyle='-', alpha=0.3)
+  handles, labels = ax.get_legend_handles_labels()
+  handles = [
+    (patches.Rectangle(xy=(0,0), width=1, height=1, color='b', alpha=0.2),
+    # patches.Rectangle(xy=(0,0), width=1, height=0.25, color='b', alpha=0.4),
+    plt.Line2D([0], [0], color='b', label='50%', linewidth=1)),
+    plt.Line2D([0], [0], color='r', linestyle='--', label=f'$F_t={failure_rate_target*100:.0f}%$', linewidth=1)
+  ]
+  labels=[labels[1], labels[2]]
+  # ax.yaxis.set_major_formatter(mtick.PercentFormatter(1))
+  ax.legend(handles=handles, labels=labels, loc='upper right',
+              bbox_to_anchor=(1, 1),
+                handletextpad=0.25, 
+                labelspacing=0.2, fontsize="small")
+  fig.tight_layout()
+  plt.savefig(f"{FIG_DIR}/system_failure_rate-{current_time}.pdf", dpi=1200)
 
   # Individual failure rate
   plt.figure(figsize=(4.5, 2))
   ax1 = plt.gca()
-  n_all,bins,_=ax1.hist([a.failure_rate for a in monte_carlo_results['all_assets']], bins=np.arange(0,1,0.01), alpha=0.5, label='Remaining assets')
-  n_rm,bins,_=ax1.hist([a.failure_rate for a in monte_carlo_results['removed_assets']], bins=np.arange(0,1,0.01), label='Removed assets')
+  n_all,bins,_=ax1.hist([a.failure_rate for a in monte_carlo_results['all_assets']], bins=np.arange(0,1,0.01), label='Remaining assets', histtype="stepfilled", edgecolor='black', color="lightcyan", linewidth=.5)
+  n_rm,bins,_=ax1.hist([a.failure_rate for a in monte_carlo_results['removed_assets']], bins=np.arange(0,1,0.01), label='Removed assets', histtype="stepfilled", edgecolor='black', color="salmon", linewidth=.5)
   ratios=[ 100*r_actor/a_actor for r_actor, a_actor in zip(n_rm,n_all)]
   ax1.set_xlabel('Individual asset failure rate $F_{a}$')
   ax1.set_ylabel('Number of assets')
@@ -270,29 +297,32 @@ if __name__ == '__main__':
   ax1.set_xticks(np.arange(0, 1.01, 0.02),minor=True)
   handles1, labels1 = ax1.get_legend_handles_labels()
   ax2 = ax1.twinx()
-  ax2.step(bins[:-1], ratios, 'b-', label='Removed assets (\%)', where="post", linewidth=1.5)
+  ax2.step(bins[:-1], ratios, color="royalblue", label='Removed assets (\%)', where="post", linewidth=1.5)
   ax2.set_ylim(0,100)
-  ax2.set_ylabel('Removed assets (\%)', color='b')
-  ax2.tick_params(axis='y', labelcolor='b')
+  ax2.set_ylabel('Removed assets (\%)', color="royalblue")
+  ax2.tick_params(axis='y', labelcolor="royalblue")
   ax2.yaxis.set_major_formatter(mtick.PercentFormatter())
   ax2.set_yticks(np.arange(0, 101, 20))
   ax2.set_yticks(np.arange(0, 101, 5), minor=True)
-  ax2.axvline(x=individual_failure_rate_target, color='k', linestyle=':', label='$F_{a}^{target}$')
-  ax2.axvline(x=failure_rate_target, color='k', linestyle='--', label='$F_{t}^{target}$')
+  ax2.axvline(x=individual_failure_rate_target, color='k', linestyle=':', label='$F_{a}^{target}$', linewidth=1)
+  ax2.axvline(x=failure_rate_target, color='k', linestyle='--', label='$F_{t}^{target}$', linewidth=1)
   handles2, labels2 = ax2.get_legend_handles_labels()
-  ax2.legend(handles=handles1+handles2, labels=labels1+labels2, loc='upper right',
+  legend=ax2.legend(handles=handles1+handles2, labels=labels1+labels2, loc='upper right',
              bbox_to_anchor=(1, 0.95),
               handletextpad=0.25, 
               labelspacing=0.2, fontsize="small")
+  legend.get_texts()[2].set_color("royalblue")
   plt.tight_layout()
   plt.savefig(f"{FIG_DIR}/individual_failure_rate-{current_time}.pdf", dpi=1200)
 
   # Effective failure rate
   plt.figure(figsize=(4.5, 2))
-  n_all,bins,_=plt.hist([a.loss/(a.nb_tasks*SLASH_AMOUNT) if a.nb_tasks>0 else 0 for a in monte_carlo_results['all_assets']], bins=np.arange(0,1,0.01), alpha=0.5, label='Remaining assets')
-  n_rm,bins,_=plt.hist([a.loss/(a.nb_tasks*SLASH_AMOUNT) if a.nb_tasks>0 else 0 for a in monte_carlo_results['removed_assets']], bins=np.arange(0,1,0.01), label='Removed assets')
-  ratios=[ 100*r_actor/a_actor for r_actor, a_actor in zip(n_rm,n_all)]
   ax1 = plt.gca()
+  n_all,bins,_=plt.hist([a.loss/(a.nb_tasks*SLASH_AMOUNT) if a.nb_tasks>0 else 0 for a in monte_carlo_results['all_assets']], 
+                        bins=np.arange(0,1,0.01), label='Remaining assets', histtype="stepfilled", edgecolor='black', color="lightcyan", linewidth=.5)
+  n_rm,bins,_=plt.hist([a.loss/(a.nb_tasks*SLASH_AMOUNT) if a.nb_tasks>0 else 0 for a in monte_carlo_results['removed_assets']], 
+                       bins=np.arange(0,1,0.01), label='Removed assets', histtype="stepfilled", edgecolor='black', color="salmon", linewidth=.5)
+  ratios=[ 100*r_actor/a_actor for r_actor, a_actor in zip(n_rm,n_all)]
   ax1.set_xlabel('Task failure rate $F_{t}$')
   ax1.set_ylabel('Number of assets')
   ax1.set_yscale('log')
@@ -300,20 +330,21 @@ if __name__ == '__main__':
   ax1.set_xticks(np.arange(0, 1.01, 0.02),minor=True)
   handles1, labels1 = ax1.get_legend_handles_labels()
   ax2 = ax1.twinx()
-  ax2.step(bins[:-1], ratios, 'b-', label='Removed assets (\%)', where="post", linewidth=1.5)
-  ax2.set_ylabel('Removed assets (\%)', color='b')
-  ax2.tick_params(axis='y', labelcolor='b')
+  ax2.step(bins[:-1], ratios, color="royalblue", label='Removed assets (\%)', where="post", linewidth=1.5)
+  ax2.set_ylim(0,100)
+  ax2.set_ylabel('Removed assets (\%)', color="royalblue")
+  ax2.tick_params(axis='y', labelcolor="royalblue")
   ax2.yaxis.set_major_formatter(mtick.PercentFormatter())
   ax2.set_yticks(np.arange(0, 101, 20))
   ax2.set_yticks(np.arange(0, 101, 5), minor=True)
-  ax2.set_ylim(0,100)
-  ax2.axvline(x=individual_failure_rate_target, color='k', linestyle=':', label='$F_{a}^{target}$')
-  ax2.axvline(x=failure_rate_target, color='k', linestyle='--', label='$F_{t}^{target}$')
+  ax2.axvline(x=individual_failure_rate_target, color='k', linestyle=':', label='$F_{a}^{target}$', linewidth=1)
+  ax2.axvline(x=failure_rate_target, color='k', linestyle='--', label='$F_{t}^{target}$', linewidth=1)
   handles2, labels2 = ax2.get_legend_handles_labels()
-  ax2.legend(handles=handles1+handles2, labels=labels1+labels2, loc='upper right',
-             bbox_to_anchor=(1, 1),
+  legend=ax2.legend(handles=handles1+handles2, labels=labels1+labels2, loc='upper right',
+             bbox_to_anchor=(1, 0.95),
               handletextpad=0.25, 
               labelspacing=0.2, fontsize="small")
+  legend.get_texts()[2].set_color("royalblue")
   plt.tight_layout()
   plt.savefig(f"{FIG_DIR}/effective_failure_rate-{current_time}.pdf", dpi=1200)
 
@@ -331,3 +362,6 @@ if __name__ == '__main__':
   # plt.axhline(y=individual_failure_rate_target, color='g', linestyle='--')
   # plt.axhline(y=failure_rate_target, color='r', linestyle='--')
   # plt.savefig(f"{FIG_DIR}/intrinsic_vs_effective_failure_rate-{current_time}.pdf", dpi=1200)
+
+if __name__ == '__main__':
+  run_marketplace()

@@ -1,5 +1,7 @@
 import numpy as np
 import random
+import matplotlib.pyplot as plt
+import sys
 
 N_ACTORS_INITIAL = 100  # Initial number of assets
 N_MAX_ACTORS = N_ACTORS_INITIAL # Maximum number of assets
@@ -12,7 +14,41 @@ TARGET_TASK_FAILURE_RATE = 0.05  # Target failure rate for each task
 REWARD_AMOUNT = TARGET_TASK_FAILURE_RATE/(1-TARGET_TASK_FAILURE_RATE)  # Reward for successful tasks
 NEW_ACTOR_INTERVAL = 500  # Frequency of new actor addition (in tasks)
 NEW_ACTOR_FAULTY_COMBOS = 0  # Number of faulty combinations per new actor
-MONTE_CARLO_RUNS = 50  # Number of Monte Carlo simulations
+MONTE_CARLO_RUNS = 100  # Number of Monte Carlo simulations
+N_FAIL_SAMPLES=100000
+
+ALPHA=0.1
+
+# Display
+X_MAX = 0.50
+Y_MAX = (N_ACTORS_INITIAL + N_TASKS//NEW_ACTOR_INTERVAL) // 10
+WINDOW_SIZE = 100
+
+FIG_DIR="out/fig"
+
+N_JOBS = int(sys.argv[1]) if len(sys.argv) > 1 else 1
+
+params = {'text.usetex' : True,
+          'font.size' : 10,
+            'font.family' : 'serif',
+            'font.serif' : 'Computer Modern Roman',
+          }
+plt.rcParams.update(params) 
+
+# Function to pad a list with zeros up to a target length
+def pad_list_with_zeros(lst, target_length):
+    return lst + [0] * (target_length - len(lst))
+
+# Function extend list to desired length by repeatinig the last element
+def extend_list(lst, target_length):
+    return lst + [lst[-1]] * (target_length - len(lst))
+
+def moving_average(a, n=3):
+    ret = np.cumsum(a, dtype=float)
+    ret[n:] = ret[n:] - ret[:-n]
+    ret[:n-1] = np.nan
+    ret[n - 1:]= ret[n - 1:] / n
+    return ret
 
 # Initialize assets and faulty sets
 class Actor:
