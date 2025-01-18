@@ -190,9 +190,9 @@ if __name__ == '__main__':
   individual_failure_rate_target = 1 - (1 - failure_rate_target) ** (1 / N_MAX_ASSETS_TASK)
 
   results=[]
-  incentives = [#coll_free, 
-                #coll_stake, 
-                #coll_rep, 
+  incentives = [coll_free, 
+                coll_stake, 
+                coll_rep, 
                 coll_SR]
   for incentive in incentives:
     results.append(run_marketplace(incentive.run_simulation, incentive.name, True))
