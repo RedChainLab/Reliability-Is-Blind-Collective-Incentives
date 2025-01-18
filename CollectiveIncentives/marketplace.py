@@ -3,28 +3,34 @@ import random
 import matplotlib.pyplot as plt
 import sys
 
-N_ACTORS_INITIAL = 100  # Initial number of assets
-N_MAX_ACTORS = N_ACTORS_INITIAL # Maximum number of assets
-N_MIN_ACTORS_TASK = 4  # Number of maximum assets for each task
-N_MAX_ACTORS_TASK = 4  # Number of maximum assets for each task
-S0 = 10  # Initial capital of each actor
+N_ASSETS_INITIAL = 100  # Initial number of assets
+N_MAX_ASSETS = N_ASSETS_INITIAL # Maximum number of assets
+N_MIN_ASSETS_TASK = 4  # Minimum number of assets for each task
+N_MAX_ASSETS_TASK = 4  # Maximum number of assets for each task
+
+S0 = 10  # Initial capital of each asset
 N_TASKS = 10000  # Number of tasks to simulate
 SLASH_AMOUNT = 1  # Amount slashed for failed tasks
-TARGET_TASK_FAILURE_RATE = 0.05  # Target failure rate for each task
+TARGET_TASK_FAILURE_RATE = 0.01  # Target failure rate for each task
 REWARD_AMOUNT = TARGET_TASK_FAILURE_RATE/(1-TARGET_TASK_FAILURE_RATE)  # Reward for successful tasks
-NEW_ACTOR_INTERVAL = 500  # Frequency of new actor addition (in tasks)
-NEW_ACTOR_FAULTY_COMBOS = 0  # Number of faulty combinations per new actor
+
+MIN_REPUTATION = 0.01
+MAX_REPUTATION = S0
+
+NEW_ASSET_INTERVAL = 500  # Frequency of new asset addition (in tasks)
+NEW_ASSET_FAULTY_COMBOS = 0  # Number of faulty combinations per new asset
 MONTE_CARLO_RUNS = 100  # Number of Monte Carlo simulations
 N_FAIL_SAMPLES=100000
 
-ALPHA=0.1
+ALPHA=0.05
 
 # Display
 X_MAX = 0.50
-Y_MAX = (N_ACTORS_INITIAL + N_TASKS//NEW_ACTOR_INTERVAL) // 10
-WINDOW_SIZE = 100
+Y_MAX = (N_ASSETS_INITIAL + N_TASKS//NEW_ASSET_INTERVAL) // 10
+WINDOW_SIZE = 500
 
 FIG_DIR="out/fig"
+DATA_DIR="out/data"
 
 N_JOBS = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 
@@ -46,12 +52,12 @@ def extend_list(lst, target_length):
 def moving_average(a, n=3):
     ret = np.cumsum(a, dtype=float)
     ret[n:] = ret[n:] - ret[:-n]
-    ret[:n-1] = np.nan
+    ret[:n-1] = ret[:n-1] / np.arange(1, n)
     ret[n - 1:]= ret[n - 1:] / n
     return ret
 
 # Initialize assets and faulty sets
-class Actor:
+class Asset:
     def __init__(self, id, stake, failure_rate):
         self.id = id
         self.stake = stake
@@ -65,26 +71,26 @@ class FaultySet:
         self.assets = assets
         self.p_fail = p_fail
 
-# Add an actor with a faulty set
-def add_actor(assets, faulty_sets, p_fail_distribution):
-    # Add a new actor
-    new_actor = Actor(len(assets), S0, generate_p_fail(p_fail_distribution))
-    assets.append(new_actor)
+# Add an asset with a faulty set
+def add_asset(assets, faulty_sets, p_fail_distribution):
+    # Add a new asset
+    new_asset = Asset(len(assets), S0, generate_p_fail(p_fail_distribution))
+    assets.append(new_asset)
 
-    # Generate a faulty set for the new actor
-    faulty_set = FaultySet([new_actor], new_actor.failure_rate)
+    # Generate a faulty set for the new asset
+    faulty_set = FaultySet([new_asset], new_asset.failure_rate)
     faulty_sets.append(faulty_set)
-    new_actor.failure_rate = faulty_set.p_fail
+    new_asset.failure_rate = faulty_set.p_fail
     
-    # Generate faulty combinations sets for the new actor
-    generate_faulty_combinations(new_actor, assets, faulty_sets, p_fail_distribution)
+    # Generate faulty combinations sets for the new asset
+    generate_faulty_combinations(new_asset, assets, faulty_sets, p_fail_distribution)
 
 # Generate initial faulty sets
-def generate_faulty_combinations(actor, assets, faulty_sets, p_fail_distribution):
-    for _ in range(NEW_ACTOR_FAULTY_COMBOS):
-        subset_size = random.randint(N_MIN_ACTORS_TASK, N_MAX_ACTORS_TASK-1)
+def generate_faulty_combinations(asset, assets, faulty_sets, p_fail_distribution):
+    for _ in range(NEW_ASSET_FAULTY_COMBOS):
+        subset_size = random.randint(N_MIN_ASSETS_TASK, N_MAX_ASSETS_TASK-1)
         subset = random.sample(assets, subset_size)
-        subset.append(actor)
+        subset.append(asset)
         p_fail = generate_p_fail(p_fail_distribution)
         faulty_sets.append(FaultySet(subset, p_fail))
 
@@ -106,25 +112,25 @@ def compute_average_reward_and_loss(assets, removed_assets, faulty_sets):
     loss_bins = {round(i * 0.05, 2): [] for i in range(20)}    # Bins of 0.05
 
     # Iterate through all assets
-    for actor in assets:
-        if actor.nb_tasks == 0:
+    for asset in assets:
+        if asset.nb_tasks == 0:
             continue
         
-        bin_key = get_failure_rate_bin(actor.failure_rate)
+        bin_key = get_failure_rate_bin(asset.failure_rate)
         
-        # Add actor's reward and loss to the corresponding bin
-        reward_bins[bin_key].append(actor.reward / actor.nb_tasks)
-        loss_bins[bin_key].append(actor.loss / actor.nb_tasks)
+        # Add asset's reward and loss to the corresponding bin
+        reward_bins[bin_key].append(asset.reward / asset.nb_tasks)
+        loss_bins[bin_key].append(asset.loss / asset.nb_tasks)
 
-    for actor in removed_assets:
-        if actor.nb_tasks == 0:
+    for asset in removed_assets:
+        if asset.nb_tasks == 0:
             continue
 
-        bin_key = get_failure_rate_bin(actor.failure_rate)
+        bin_key = get_failure_rate_bin(asset.failure_rate)
         
-        # Add actor's reward and loss to the corresponding bin
-        reward_bins[bin_key].append(actor.reward / actor.nb_tasks)
-        loss_bins[bin_key].append(actor.loss / actor.nb_tasks)
+        # Add asset's reward and loss to the corresponding bin
+        reward_bins[bin_key].append(asset.reward / asset.nb_tasks)
+        loss_bins[bin_key].append(asset.loss / asset.nb_tasks)
 
     # Compute the averages for each bin
     average_rewards_per_bin = {bin_key: np.mean(values) if values else 0 for bin_key, values in reward_bins.items()}

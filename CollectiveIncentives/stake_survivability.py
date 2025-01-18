@@ -105,7 +105,7 @@ if __name__ == '__main__':
     # ax.set_position([box.x0, box.y0, box.width * 0.65, box.height])
     # Put a legend to the right of the current axis
     handles, labels = ax.get_legend_handles_labels()
-    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5),
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.45),
                 handletextpad=0.25, 
                 labelspacing=0.2, fontsize="small", framealpha=0.7)
     current_time = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
