@@ -107,7 +107,6 @@ def run_simulation(faulty_sets, p_fail_distribution):
             false_negative += 1
 
     precision = true_positive / (true_positive + false_positive) if true_positive + false_positive != 0 else 1
-    accuracy = (true_positive + (len(assets) - false_negative)) / total_assets
     recall = true_positive / (true_positive + false_negative) if true_positive + false_negative != 0 else 1
 
     return {
@@ -119,7 +118,6 @@ def run_simulation(faulty_sets, p_fail_distribution):
         'failed_tasks': failed_tasks,
         'final_number_of_assets': len(assets),
         'precision': precision,
-        'accuracy': accuracy,
         'recall': recall,
         'assets': assets,
         'removed_assets': removed_assets,

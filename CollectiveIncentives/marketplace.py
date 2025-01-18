@@ -3,30 +3,28 @@ import random
 import matplotlib.pyplot as plt
 import sys
 
-N_ASSETS_INITIAL = 100  # Initial number of assets
+N_ASSETS_INITIAL = 100          # N_{a}: Initial number of assets
 N_MAX_ASSETS = N_ASSETS_INITIAL # Maximum number of assets
-N_MIN_ASSETS_TASK = 4  # Minimum number of assets for each task
-N_MAX_ASSETS_TASK = 4  # Maximum number of assets for each task
+N_MIN_ASSETS_TASK = 4           # Minimum number of assets for each task
+N_MAX_ASSETS_TASK = 4           # Maximum number of assets for each task
 
-S0 = 10  # Initial capital of each asset
-N_TASKS = 10000  # Number of tasks to simulate
-SLASH_AMOUNT = 1  # Amount slashed for failed tasks
-TARGET_TASK_FAILURE_RATE = 0.01  # Target failure rate for each task
-REWARD_AMOUNT = TARGET_TASK_FAILURE_RATE/(1-TARGET_TASK_FAILURE_RATE)  # Reward for successful tasks
+S0 = 10                         # S_{0}: Initial stake backing each asset
+N_TASKS = 10000                 # N_{t}: Number of tasks to simulate
+SLASH_AMOUNT = 1                # P: Amount slashed for failed tasks
+TARGET_TASK_FAILURE_RATE = 0.05 # F_{t}^{target}: Target failure rate for each task
+REWARD_AMOUNT = TARGET_TASK_FAILURE_RATE/(1-TARGET_TASK_FAILURE_RATE) # R: Reward for successful tasks
 
-MIN_REPUTATION = 0.01
+MIN_REPUTATION = S0/1000
 MAX_REPUTATION = S0
 
-NEW_ASSET_INTERVAL = 500  # Frequency of new asset addition (in tasks)
-NEW_ASSET_FAULTY_COMBOS = 0  # Number of faulty combinations per new asset
-MONTE_CARLO_RUNS = 100  # Number of Monte Carlo simulations
+NEW_ASSET_INTERVAL = 500        # T: Period between new asset additions (in tasks)
+NEW_ASSET_FAULTY_COMBOS = 0     # Number of faulty combinations per new asset
+N_SIM_RUNS = 100                 # Number of simulations
 N_FAIL_SAMPLES=100000
 
-ALPHA=0.05
+ALPHA=0.1
 
 # Display
-X_MAX = 0.50
-Y_MAX = (N_ASSETS_INITIAL + N_TASKS//NEW_ASSET_INTERVAL) // 10
 WINDOW_SIZE = 500
 
 FIG_DIR="out/fig"
